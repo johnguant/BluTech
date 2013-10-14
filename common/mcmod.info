@@ -1,0 +1,21 @@
+[
+{
+  "modid": "blutech",
+  "name": "BluTech",
+  "description": "Cool tech mod (better description coming soon",
+  "version": "@VERSION@",
+  "url": "COMING SOON :)",
+  "updateUrl": "",
+  "authorList": [
+    "john_guant",
+    "Blu_B0lt"
+  ],
+  "credits": "The world!",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
