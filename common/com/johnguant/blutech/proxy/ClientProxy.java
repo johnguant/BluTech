@@ -16,15 +16,8 @@
  *  
  */
 
-package com.johnguant.blutech.lib;
+package com.johnguant.blutech.proxy;
 
-public class Reference {
+public class ClientProxy extends CommonProxy {
 
-	
-	public static final String MOD_ID = "blutech";
-	public static final String MOD_NAME = "BluTech";
-	public static final String VERSION = "0.0.0";
-    public static final String SERVER_PROXY_CLASS = "com.johnguant.blutech.proxy.CommonProxy";
-    public static final String CLIENT_PROXY_CLASS = "com.johnguant.blutech.proxy.ClientProxy";
-	
 }
