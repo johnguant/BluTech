@@ -18,6 +18,8 @@
 
 package com.johnguant.blutech;
 
+import net.minecraft.item.Item;
+
 import com.johnguant.blutech.lib.Reference;
 import com.johnguant.blutech.proxy.CommonProxy;
 
@@ -28,6 +30,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class BluTech {
@@ -45,7 +48,7 @@ public class BluTech {
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		
+
 	}
 	
 	@EventHandler
