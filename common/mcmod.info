@@ -4,7 +4,7 @@
   "name": "BluTech",
   "description": "Cool tech mod (better description coming soon",
   "version": "@VERSION@",
-  "url": "COMING SOON :)",
+  "url": "https://github.com/johnguant/BluTech",
   "updateUrl": "",
   "authorList": [
     "john_guant",
@@ -15,7 +15,7 @@
   "screenshots": [
   ],
   "parent":"",
-  "dependencies":"" [
+  "dependencies": [
   ]
 }
 ]
