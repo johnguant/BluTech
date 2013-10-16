@@ -18,8 +18,11 @@
 
 package com.johnguant.blutech;
 
-import net.minecraft.item.Item;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraftforge.common.MinecraftForge;
 
+import com.johnguant.blutech.block.BlockOre;
 import com.johnguant.blutech.lib.Reference;
 import com.johnguant.blutech.proxy.CommonProxy;
 
@@ -30,10 +33,13 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class BluTech {
+	
+	public final static Block bluOre = new BlockOre(501, Material.rock);
 	
 	@Instance(Reference.MOD_ID)
 	public static BluTech instance;
@@ -48,6 +54,10 @@ public class BluTech {
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
+		
+		LanguageRegistry.addName(bluOre, "Blu Ore");
+		MinecraftForge.setBlockHarvestLevel(bluOre, "pickaxe", 2);
+		GameRegistry.registerBlock(bluOre, "bluOre");
 
 	}
 	
