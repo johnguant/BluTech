@@ -18,7 +18,10 @@
 
 package com.johnguant.blutech;
 
+import net.minecraft.creativetab.CreativeTabs;
+
 import com.johnguant.blutech.block.BluBlocks;
+import com.johnguant.blutech.creativetab.CreativeTabBluTech;
 import com.johnguant.blutech.gen.OreGen;
 import com.johnguant.blutech.lib.Reference;
 import com.johnguant.blutech.proxy.CommonProxy;
@@ -42,6 +45,8 @@ public class BluTech {
 
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
+	
+	 public static CreativeTabs tabsBluTech = new CreativeTabBluTech(CreativeTabs.getNextID(), Reference.MOD_ID);
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
