@@ -23,6 +23,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import com.johnguant.blutech.block.BluBlocks;
 import com.johnguant.blutech.creativetab.CreativeTabBluTech;
 import com.johnguant.blutech.gen.OreGen;
+import com.johnguant.blutech.item.BluItems;
 import com.johnguant.blutech.lib.Reference;
 import com.johnguant.blutech.proxy.CommonProxy;
 
@@ -50,6 +51,7 @@ public class BluTech {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		BluItems.init();
 		BluBlocks.init();
 	}
 
