@@ -18,11 +18,14 @@
 
 package com.johnguant.blutech.block;
 
+import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 
 import com.johnguant.blutech.BluTech;
+import com.johnguant.blutech.item.BluItems;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -44,8 +47,21 @@ public class BlockOre extends Block {
 	public void registerIcons(IconRegister iconRegister) {
 	         this.blockIcon = iconRegister.registerIcon("blutech:" + (this.getUnlocalizedName().substring(5)));
 	}
+	
 	/**
 	 * Returns the ID of the items to drop on destruction.
 	 */
+    public int idDropped(int par1, Random par2Random, int par3)
+    {
+        return BluItems.bluDust.itemID;
+    }
+    
+    /**
+     * Returns the quantity of items to drop on block destruction.
+     */
+    public int quantityDropped(Random par1Random)
+    {
+        return 4 + par1Random.nextInt(2);
+    }
 
 }
