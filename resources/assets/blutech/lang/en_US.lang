@@ -1,3 +1,6 @@
 # Block localizations
 tile.bluOre.name=Blu Ore
 itemGroup.blutech=BluTech
+
+#Item localizations
+item.bluDust.name=Blu Dust
