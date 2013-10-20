@@ -15,7 +15,7 @@
 
 	<target name="forge-download">
 		<mkdir dir="${environment.base_location}/temp" />
-		<get src="${minecraftforge_src_archive_location}" dest="${environment.base_location}/temp/${minecraftforge_src_archive_location}" verbose="true" usetimestamp="true" />
+		<get src="${minecraftforge_src_archive_location}" dest="${environment.base_location}/temp/${minecraftforge_src_archive}" verbose="true" usetimestamp="true" />
 	</target>
 
 	<target name="forge-uncompress" depends="forge-download">
