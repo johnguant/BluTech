@@ -8,12 +8,12 @@ import com.johnguant.blutech.BluTech;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemDust extends Item {
+public class ItemIngot extends Item {
 
-	public ItemDust(int par1) 
+	public ItemIngot(int par1) 
 	{
 		super(par1);
-		setUnlocalizedName("bluDust");
+		setUnlocalizedName("bluAlloyIngot");
 		setCreativeTab(BluTech.tabsBluTech);
 	}
 	
@@ -22,7 +22,4 @@ public class ItemDust extends Item {
 	public void registerIcons(IconRegister iconRegister) {
 	         this.itemIcon = iconRegister.registerIcon("blutech:" + (this.getUnlocalizedName().substring(5)));
 	}
-	
-	
-
 }
