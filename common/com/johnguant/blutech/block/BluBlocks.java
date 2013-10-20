@@ -29,11 +29,15 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class BluBlocks {
 
 	public static Block bluOre;
+	public static Block aluminiumOre;
 
 	public static void init() {
 		bluOre = new BlockOre(BlockIds.BLUORE_ID);
 		GameRegistry.registerBlock(bluOre, Strings.BLUORE_NAME);
 		MinecraftForge.setBlockHarvestLevel(bluOre, "pickaxe", 2);
+		aluminiumOre = new BlockOre(BlockIds.ALUMINIUMORE_ID);
+		GameRegistry.registerBlock(aluminiumOre, Strings.ALUMINIUMORE_NAME);
+		MinecraftForge.setBlockHarvestLevel(aluminiumOre, "pickaxe", 1);
 	}
 
 }

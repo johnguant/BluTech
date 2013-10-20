@@ -22,5 +22,9 @@ public class BlockIds {
 
 	public final static int BLUORE_ID_DEFAULT = 500;
 	public static int BLUORE_ID;
+	
+	public final static int ALUMINIUMORE_ID_DEFAULT = 501;
+	public static int ALUMINIUMORE_ID;
+			
 
 }
