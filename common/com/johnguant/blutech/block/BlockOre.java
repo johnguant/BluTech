@@ -33,35 +33,34 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class BlockOre extends Block {
 
 	// Defines BlockOre
-	public BlockOre(int par1, Material material) {
-		super(par1, material);
+	public BlockOre(int id) {
+		super(id, Material.rock);
 		setHardness(3.0F);
 		setStepSound(Block.soundStoneFootstep);
 		setUnlocalizedName("bluOre");
 		setCreativeTab(BluTech.tabsBluTech);
-		textureName="bluOre";
+		textureName = "bluOre";
 	}
-	
+
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister iconRegister) {
-	         this.blockIcon = iconRegister.registerIcon("blutech:" + (this.getUnlocalizedName().substring(5)));
+		this.blockIcon = iconRegister.registerIcon("blutech:"
+				+ (this.getUnlocalizedName().substring(5)));
 	}
-	
+
 	/**
 	 * Returns the ID of the items to drop on destruction.
 	 */
-    public int idDropped(int par1, Random par2Random, int par3)
-    {
-        return BluItems.bluDust.itemID;
-    }
-    
-    /**
-     * Returns the quantity of items to drop on block destruction.
-     */
-    public int quantityDropped(Random par1Random)
-    {
-        return 4 + par1Random.nextInt(2);
-    }
+	public int idDropped(int par1, Random par2Random, int par3) {
+		return BluItems.bluDust.itemID;
+	}
+
+	/**
+	 * Returns the quantity of items to drop on block destruction.
+	 */
+	public int quantityDropped(Random par1Random) {
+		return 4 + par1Random.nextInt(2);
+	}
 
 }

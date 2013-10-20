@@ -18,9 +18,12 @@
 
 package com.johnguant.blutech;
 
+import java.io.File;
+
 import net.minecraft.creativetab.CreativeTabs;
 
 import com.johnguant.blutech.block.BluBlocks;
+import com.johnguant.blutech.configuration.ConfigurationHandler;
 import com.johnguant.blutech.creativetab.CreativeTabBluTech;
 import com.johnguant.blutech.gen.OreGen;
 import com.johnguant.blutech.item.BluItems;
@@ -38,26 +41,32 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
-@NetworkMod(clientSideRequired=true)
+@NetworkMod(clientSideRequired = true)
 public class BluTech {
-	
+
 	@Instance(Reference.MOD_ID)
 	public static BluTech instance;
 
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
-	
-	 public static CreativeTabs tabsBluTech = new CreativeTabBluTech(CreativeTabs.getNextID(), Reference.MOD_ID);
+
+	public static CreativeTabs tabsBluTech = new CreativeTabBluTech(
+			CreativeTabs.getNextID(), Reference.MOD_ID);
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		ConfigurationHandler.init(new File(event.getModConfigurationDirectory()
+				.getAbsolutePath()
+				+ File.separator
+				+ Reference.MOD_ID
+				+ File.separator + Reference.MOD_ID + ".cfg"));
 		BluItems.init();
 		BluBlocks.init();
 	}
 
 	@EventHandler
 	public void load(FMLInitializationEvent event) {
-		
+
 		GameRegistry.registerWorldGenerator(new OreGen());
 
 	}

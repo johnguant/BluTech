@@ -19,8 +19,11 @@
 package com.johnguant.blutech.block;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraftforge.common.MinecraftForge;
+
+import com.johnguant.blutech.lib.BlockIds;
+import com.johnguant.blutech.lib.Strings;
+
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class BluBlocks {
@@ -28,8 +31,8 @@ public class BluBlocks {
 	public static Block bluOre;
 
 	public static void init() {
-		bluOre = new BlockOre(501, Material.rock);
-		GameRegistry.registerBlock(bluOre, "BluOre");
+		bluOre = new BlockOre(BlockIds.BLUORE_ID);
+		GameRegistry.registerBlock(bluOre, Strings.BLUORE_NAME);
 		MinecraftForge.setBlockHarvestLevel(bluOre, "pickaxe", 2);
 	}
 
