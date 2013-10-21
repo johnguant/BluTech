@@ -42,6 +42,10 @@ public class ConfigurationHandler {
 			BlockIds.BLUORE_ID = config.getBlock(Strings.BLUORE_NAME,
 					BlockIds.BLUORE_ID_DEFAULT).getInt(
 					BlockIds.BLUORE_ID_DEFAULT);
+			
+			BlockIds.ALUMINIUMORE_ID = config.getBlock(Strings.ALUMINIUMORE_NAME,
+					BlockIds.ALUMINIUMORE_ID_DEFAULT).getInt(
+					BlockIds.ALUMINIUMORE_ID_DEFAULT);
 
 			ItemIds.BLUDUST_ID = config.getItem(Strings.BLUDUST_NAME,
 					ItemIds.BLUDUST_ID_DEFAULT).getInt(
