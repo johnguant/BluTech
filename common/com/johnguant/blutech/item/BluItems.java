@@ -33,8 +33,10 @@ public class BluItems {
 	public static void init() {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
 		GameRegistry.registerItem(bluDust, Strings.BLUDUST_NAME);
+		
 		bluAlloyIngot = new ItemIngot(ItemIds.BLUINGOT_ID);
 		GameRegistry.registerItem(bluAlloyIngot, Strings.BLUINGOT_NAME);
+		
 		aluminiumShard = new ItemAluminium(ItemIds.ALUMINIUMSHARD_ID);
 		GameRegistry.registerItem(aluminiumShard, Strings.ALUMINIUMORE_NAME);
 		

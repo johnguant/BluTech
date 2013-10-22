@@ -34,8 +34,9 @@ public class BluBlocks {
 		bluOre = new BlockOre(BlockIds.BLUORE_ID);
 		GameRegistry.registerBlock(bluOre, Strings.BLUORE_NAME);
 		MinecraftForge.setBlockHarvestLevel(bluOre, "pickaxe", 2);
+		
 		aluminiumOre = new BlockAluminiumOre(BlockIds.ALUMINIUMORE_ID);
-		GameRegistry.registerBlock(aluminiumOre, Strings.ALUMINIUMORE_NAME);
+		GameRegistry.registerBlock(aluminiumOre, "aluminiumOre");
 		MinecraftForge.setBlockHarvestLevel(aluminiumOre, "pickaxe", 1);
 	}
 
