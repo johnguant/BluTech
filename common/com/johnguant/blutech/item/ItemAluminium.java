@@ -17,27 +17,25 @@
 
 package com.johnguant.blutech.item;
 
+import com.johnguant.blutech.BluTech;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
 
-import com.johnguant.blutech.lib.ItemIds;
-import com.johnguant.blutech.lib.Strings;
-
-import cpw.mods.fml.common.registry.GameRegistry;
-
-public class BluItems {
-
-	public static Item bluAlloyIngot;
-	public static Item bluDust;
-	public static Item aluminiumShard;
-
-	public static void init() {
-		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
-		GameRegistry.registerItem(bluDust, Strings.BLUDUST_NAME);
-		bluAlloyIngot = new ItemIngot(ItemIds.BLUINGOT_ID);
-		GameRegistry.registerItem(bluAlloyIngot, Strings.BLUINGOT_NAME);
-		aluminiumShard = new ItemAluminium(ItemIds.ALUMINIUMSHARD_ID);
-		GameRegistry.registerItem(aluminiumShard, Strings.ALUMINIUMORE_NAME);
-		
+public class ItemAluminium extends Item {
+	
+	public ItemAluminium(int par1) 
+	{
+		super(par1);
+		setUnlocalizedName("aluminiumShard");
+		setCreativeTab(BluTech.tabsBluTech);
 	}
-
+	
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void registerIcons(IconRegister iconRegister) {
+	         this.itemIcon = iconRegister.registerIcon("blutech:" + (this.getUnlocalizedName().substring(5)));
+	}
 }

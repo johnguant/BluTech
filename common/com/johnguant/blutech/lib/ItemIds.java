@@ -24,5 +24,8 @@ public class ItemIds {
 
 	public final static int BLUINGOT_ID_DEFAULT = 1002;
 	public static int BLUINGOT_ID;
-
+	
+	public final static int ALUMINIUMSHARD_ID_DEFAULT = 1003;
+	public static int ALUMINIUMSHARD_ID;
+	
 }
