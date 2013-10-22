@@ -28,7 +28,7 @@ public class BluItems {
 
 	public static Item bluAlloyIngot;
 	public static Item bluDust;
-	public static Item aluminiumShard;
+	public static Item aluminiumIngot;
 
 	public static void init() {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
@@ -37,8 +37,8 @@ public class BluItems {
 		bluAlloyIngot = new ItemIngot(ItemIds.BLUINGOT_ID);
 		GameRegistry.registerItem(bluAlloyIngot, Strings.BLUINGOT_NAME);
 		
-		aluminiumShard = new ItemAluminium(ItemIds.ALUMINIUMSHARD_ID);
-		GameRegistry.registerItem(aluminiumShard, Strings.ALUMINIUMORE_NAME);
+		aluminiumIngot = new ItemAluminium(ItemIds.ALUMINIUMINGOT_ID);
+		GameRegistry.registerItem(aluminiumIngot, Strings.ALUMINIUMORE_NAME);
 		
 	}
 

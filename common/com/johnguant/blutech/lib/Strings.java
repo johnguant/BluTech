@@ -27,6 +27,6 @@ public class Strings {
 	
 	public static final String ALUMINIUMORE_NAME = "AluminiumOre";
 
-	public static final String ALUMINIUMSHARD_NAME = "AluminiumShard";
+	public static final String ALUMINIUMINGOT_NAME = "AluminiumIngot";
 	
 }

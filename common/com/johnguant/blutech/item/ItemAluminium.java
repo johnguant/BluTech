@@ -29,7 +29,7 @@ public class ItemAluminium extends Item {
 	public ItemAluminium(int par1) 
 	{
 		super(par1);
-		setUnlocalizedName("aluminiumShard");
+		setUnlocalizedName("aluminiumIngot");
 		setCreativeTab(BluTech.tabsBluTech);
 	}
 	

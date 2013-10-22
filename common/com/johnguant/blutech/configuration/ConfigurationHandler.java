@@ -55,9 +55,9 @@ public class ConfigurationHandler {
 					ItemIds.BLUINGOT_ID_DEFAULT).getInt(
 					ItemIds.BLUINGOT_ID_DEFAULT);
 			
-			ItemIds.ALUMINIUMSHARD_ID = config.getItem(Strings.ALUMINIUMSHARD_NAME,
-					ItemIds.ALUMINIUMSHARD_ID_DEFAULT).getInt(
-					ItemIds.ALUMINIUMSHARD_ID_DEFAULT);
+			ItemIds.ALUMINIUMINGOT_ID = config.getItem(Strings.ALUMINIUMINGOT_NAME,
+					ItemIds.ALUMINIUMINGOT_ID_DEFAULT).getInt(
+					ItemIds.ALUMINIUMINGOT_ID_DEFAULT);
 
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID
