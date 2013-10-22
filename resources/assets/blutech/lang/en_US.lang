@@ -1,6 +1,8 @@
 # Block localizations
 tile.bluOre.name=Blu Ore
 tile.aluminiumOre.name=Aluminium Ore
+tile.copperOre.name=Copper Ore
+tile.tinOre.name=Tin Ore
 itemGroup.blutech=BluTech
 
 #Item localizations

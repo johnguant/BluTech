@@ -24,6 +24,12 @@ public class BlockIds {
 	
 	public final static int ALUMINIUMORE_ID_DEFAULT = 501;
 	public static int ALUMINIUMORE_ID;
+	
+	public final static int COPPERORE_ID_DEFAULT = 502;
+	public static int COPPERORE_ID;
+	
+	public final static int TINORE_ID_DEFAULT = 503;
+	public static int TINORE_ID;
 			
 
 }

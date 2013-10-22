@@ -29,4 +29,10 @@ public class Strings {
 
 	public static final String ALUMINIUMINGOT_NAME = "AluminiumIngot";
 	
+	public static final String COPPERORE_NAME = "CopperOre";
+
+	public static final String TINORE_NAME = "TinOre";
+	
+	
+	
 }
