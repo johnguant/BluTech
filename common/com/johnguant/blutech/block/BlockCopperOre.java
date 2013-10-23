@@ -30,7 +30,7 @@ public class BlockCopperOre extends Block {
 
 	public BlockCopperOre(int id) {
 		super(id, Material.rock);
-		setHardness(3.0F);
+		setHardness(2.0F);
 		setStepSound(Block.soundStoneFootstep);
 		setUnlocalizedName("copperOre");
 		setCreativeTab(BluTech.tabsBluTech);

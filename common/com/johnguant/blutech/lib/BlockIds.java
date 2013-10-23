@@ -30,6 +30,8 @@ public class BlockIds {
 	
 	public final static int TINORE_ID_DEFAULT = 503;
 	public static int TINORE_ID;
-			
+	
+	public final static int LEADORE_ID_DEFAULT = 504;
+	public static int LEADORE_ID;
 
 }

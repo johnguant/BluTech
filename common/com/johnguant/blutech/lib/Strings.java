@@ -33,6 +33,6 @@ public class Strings {
 
 	public static final String TINORE_NAME = "TinOre";
 	
-	
+	public static final String LEADORE_NAME = "LeadOre";	
 	
 }

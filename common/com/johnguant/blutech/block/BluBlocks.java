@@ -31,7 +31,8 @@ public class BluBlocks {
 	public static Block aluminiumOre;
 	public static Block copperOre;
 	public static Block tinOre;
-
+	public static Block leadOre;
+	
 	public static void init() {
 		bluOre = new BlockOre(BlockIds.BLUORE_ID);
 		GameRegistry.registerBlock(bluOre, Strings.BLUORE_NAME);
@@ -49,6 +50,9 @@ public class BluBlocks {
 		GameRegistry.registerBlock(tinOre, "tinOre");
 		MinecraftForge.setBlockHarvestLevel(tinOre, "pickaxe", 1);
 		
+		leadOre = new BlockLeadOre(BlockIds.LEADORE_ID);
+		GameRegistry.registerBlock(leadOre, "leadOre");
+		MinecraftForge.setBlockHarvestLevel(leadOre, "pickaxe", 1);
 	}
 
 }

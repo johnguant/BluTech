@@ -30,7 +30,7 @@ public class BlockTinOre extends Block {
 	
 	public BlockTinOre(int id) {
 		super(id, Material.rock);
-		setHardness(3.0F);
+		setHardness(2.0F);
 		setStepSound(Block.soundStoneFootstep);
 		setUnlocalizedName("tinOre");
 		setCreativeTab(BluTech.tabsBluTech);
