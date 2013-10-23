@@ -15,26 +15,29 @@
  * along with BluTech.  If not, see <http://www.gnu.org/licenses/>.
  *******************************************************************************/
 
-package com.johnguant.blutech.lib;
+package com.johnguant.blutech.item;
 
-public class ItemIds {
+import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.item.Item;
 
-	public final static int BLUDUST_ID_DEFAULT = 1001;
-	public static int BLUDUST_ID;
+import com.johnguant.blutech.BluTech;
 
-	public final static int BLUINGOT_ID_DEFAULT = 1002;
-	public static int BLUINGOT_ID;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
+public class ItemLeadIngot extends Item {
 	
-	public final static int ALUMINIUMINGOT_ID_DEFAULT = 1003;
-	public static int ALUMINIUMINGOT_ID;
+	public ItemLeadIngot(int par1)
+	{
+		super(par1);
+		setUnlocalizedName("leadIngot");
+		setCreativeTab(BluTech.tabsBluTech);
+	}
 	
-	public final static int LEADINGOT_ID_DEFAULT = 1004;
-	public static int LEADINGOT_ID;
-	
-	public final static int COPPERINGOT_ID_DEFAULT = 1005;
-	public static int COPPERINGOT_ID;
-	
-	public final static int TININGOT_ID_DEFAULT = 1006;
-	public static int TININGOT_ID;
-		
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void registerIcons(IconRegister iconRegister) {
+	         this.itemIcon = iconRegister.registerIcon("blutech:" + (this.getUnlocalizedName().substring(5)));
+
+	}
 }

@@ -70,6 +70,18 @@ public class ConfigurationHandler {
 			ItemIds.ALUMINIUMINGOT_ID = config.getItem(Strings.ALUMINIUMINGOT_NAME,
 					ItemIds.ALUMINIUMINGOT_ID_DEFAULT).getInt(
 					ItemIds.ALUMINIUMINGOT_ID_DEFAULT);
+			
+			ItemIds.LEADINGOT_ID = config.getItem(Strings.LEADINGOT_NAME,
+					ItemIds.LEADINGOT_ID_DEFAULT).getInt(
+					ItemIds.LEADINGOT_ID_DEFAULT);
+			
+			ItemIds.COPPERINGOT_ID = config.getItem(Strings.COPPERINGOT_NAME,
+					ItemIds.COPPERINGOT_ID_DEFAULT).getInt(
+					ItemIds.COPPERINGOT_ID_DEFAULT);
+			
+			ItemIds.TININGOT_ID = config.getItem(Strings.TININGOT_NAME,
+					ItemIds.TININGOT_ID_DEFAULT).getInt(
+					ItemIds.TININGOT_ID_DEFAULT);
 
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID

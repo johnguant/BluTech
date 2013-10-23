@@ -29,6 +29,12 @@ public class Strings {
 
 	public static final String ALUMINIUMINGOT_NAME = "AluminiumIngot";
 	
+	public static final String LEADINGOT_NAME = "LeadIngot";
+	
+	public static final String COPPERINGOT_NAME = "CopperIngot";
+	
+	public static final String TININGOT_NAME = "TinIngot";
+	
 	public static final String COPPERORE_NAME = "CopperOre";
 
 	public static final String TINORE_NAME = "TinOre";

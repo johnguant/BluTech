@@ -29,6 +29,9 @@ public class BluItems {
 	public static Item bluAlloyIngot;
 	public static Item bluDust;
 	public static Item aluminiumIngot;
+	public static Item leadIngot;
+	public static Item copperIngot;
+	public static Item tinIngot;
 
 	public static void init() {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
@@ -39,6 +42,15 @@ public class BluItems {
 		
 		aluminiumIngot = new ItemAluminium(ItemIds.ALUMINIUMINGOT_ID);
 		GameRegistry.registerItem(aluminiumIngot, Strings.ALUMINIUMORE_NAME);
+		
+		leadIngot = new ItemLeadIngot(ItemIds.LEADINGOT_ID);
+		GameRegistry.registerItem(leadIngot, Strings.LEADINGOT_NAME);
+		
+		copperIngot = new ItemCopper(ItemIds.COPPERINGOT_ID);
+		GameRegistry.registerItem(copperIngot, Strings.COPPERINGOT_NAME);
+		
+		tinIngot = new ItemTin(ItemIds.TININGOT_ID);
+		GameRegistry.registerItem(tinIngot, Strings.TININGOT_NAME);
 		
 	}
 

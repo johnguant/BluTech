@@ -10,3 +10,6 @@ itemGroup.blutech=BluTech
 item.bluDust.name=Blu Dust
 item.bluAlloyIngot.name=Blu Alloy Ingot
 item.aluminiumIngot.name=Aluminium Ingot
+item.leadIngot.name=Lead Ingot
+item.copperIngot.name=Copper Ingot
+item.tinIngot.name=Tin Ingot
