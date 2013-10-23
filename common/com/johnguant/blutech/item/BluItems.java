@@ -18,6 +18,8 @@
 package com.johnguant.blutech.item;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 import com.johnguant.blutech.lib.ItemIds;
 import com.johnguant.blutech.lib.Strings;
@@ -36,21 +38,29 @@ public class BluItems {
 	public static void init() {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
 		GameRegistry.registerItem(bluDust, Strings.BLUDUST_NAME);
+		OreDictionary.registerOre("dustBlu", new ItemStack(bluDust));
 		
 		bluAlloyIngot = new ItemIngot(ItemIds.BLUINGOT_ID);
 		GameRegistry.registerItem(bluAlloyIngot, Strings.BLUINGOT_NAME);
+		OreDictionary.registerOre("ingotBluAlloy", new ItemStack(bluAlloyIngot));
 		
 		aluminiumIngot = new ItemAluminium(ItemIds.ALUMINIUMINGOT_ID);
 		GameRegistry.registerItem(aluminiumIngot, Strings.ALUMINIUMORE_NAME);
+		OreDictionary.registerOre("ingotAluminium", new ItemStack(aluminiumIngot));
 		
 		leadIngot = new ItemLeadIngot(ItemIds.LEADINGOT_ID);
 		GameRegistry.registerItem(leadIngot, Strings.LEADINGOT_NAME);
+		OreDictionary.registerOre("ingotlead", new ItemStack(leadIngot));
+		
 		
 		copperIngot = new ItemCopper(ItemIds.COPPERINGOT_ID);
 		GameRegistry.registerItem(copperIngot, Strings.COPPERINGOT_NAME);
+		OreDictionary.registerOre("ingotCopper", new ItemStack(copperIngot));
 		
 		tinIngot = new ItemTin(ItemIds.TININGOT_ID);
 		GameRegistry.registerItem(tinIngot, Strings.TININGOT_NAME);
+		OreDictionary.registerOre("ingotTin", new ItemStack(tinIngot));
+		
 		
 	}
 

@@ -18,7 +18,9 @@
 package com.johnguant.blutech.block;
 
 import net.minecraft.block.Block;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.oredict.OreDictionary;
 
 import com.johnguant.blutech.lib.BlockIds;
 import com.johnguant.blutech.lib.Strings;
@@ -37,22 +39,27 @@ public class BluBlocks {
 		bluOre = new BlockOre(BlockIds.BLUORE_ID);
 		GameRegistry.registerBlock(bluOre, Strings.BLUORE_NAME);
 		MinecraftForge.setBlockHarvestLevel(bluOre, "pickaxe", 2);
+		OreDictionary.registerOre("oreBlu", new ItemStack(bluOre));
 		
 		aluminiumOre = new BlockAluminiumOre(BlockIds.ALUMINIUMORE_ID);
 		GameRegistry.registerBlock(aluminiumOre, "aluminiumOre");
 		MinecraftForge.setBlockHarvestLevel(aluminiumOre, "pickaxe", 1);
+		OreDictionary.registerOre("oreAluminium", new ItemStack(aluminiumOre));
 		
 		copperOre = new BlockCopperOre(BlockIds.COPPERORE_ID);
 		GameRegistry.registerBlock(copperOre, "copperOre");
 		MinecraftForge.setBlockHarvestLevel(copperOre, "pickaxe", 1);
+		OreDictionary.registerOre("oreCopper", new ItemStack(copperOre));
 		
 		tinOre = new BlockTinOre(BlockIds.TINORE_ID);
 		GameRegistry.registerBlock(tinOre, "tinOre");
 		MinecraftForge.setBlockHarvestLevel(tinOre, "pickaxe", 1);
+		OreDictionary.registerOre("oreTin", new ItemStack(tinOre));
 		
 		leadOre = new BlockLeadOre(BlockIds.LEADORE_ID);
 		GameRegistry.registerBlock(leadOre, "leadOre");
 		MinecraftForge.setBlockHarvestLevel(leadOre, "pickaxe", 1);
+		OreDictionary.registerOre("oreLead", new ItemStack(leadOre));
 	}
 
 }

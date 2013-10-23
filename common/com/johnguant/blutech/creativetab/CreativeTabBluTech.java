@@ -17,10 +17,9 @@
 
 package com.johnguant.blutech.creativetab;
 
-import com.johnguant.blutech.item.BluItems;
-
-import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
+
+import com.johnguant.blutech.item.BluItems;
 
 public class CreativeTabBluTech extends CreativeTabs {
 
