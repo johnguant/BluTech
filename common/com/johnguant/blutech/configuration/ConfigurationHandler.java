@@ -59,6 +59,14 @@ public class ConfigurationHandler {
 					BlockIds.LEADORE_ID_DEFAULT).getInt(
 					BlockIds.LEADORE_ID_DEFAULT);
 			
+			BlockIds.RHODIUMORE_ID = config.getBlock(Strings.RHODIUMORE_NAME,
+					BlockIds.RHODIUMORE_ID_DEFAULT).getInt(
+					BlockIds.RHODIUMORE_ID_DEFAULT);
+			
+			BlockIds.REMBONITEORE_ID = config.getBlock(Strings.REMBONITEORE_NAME,
+					BlockIds.REMBONITEORE_ID_DEFAULT).getInt(
+					BlockIds.REMBONITEORE_ID_DEFAULT);
+			
 			ItemIds.BLUDUST_ID = config.getItem(Strings.BLUDUST_NAME,
 					ItemIds.BLUDUST_ID_DEFAULT).getInt(
 					ItemIds.BLUDUST_ID_DEFAULT);

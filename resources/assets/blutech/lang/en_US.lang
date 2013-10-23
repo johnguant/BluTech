@@ -4,6 +4,8 @@ tile.aluminiumOre.name=Aluminium Ore
 tile.copperOre.name=Copper Ore
 tile.tinOre.name=Tin Ore
 tile.leadOre.name=Lead Ore
+tile.rhodiumOre.name=Rhodium Ore
+tile.remboniteOre.name=Rembonite Ore
 itemGroup.blutech=BluTech
 
 #Item localizations

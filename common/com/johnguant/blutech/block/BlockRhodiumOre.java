@@ -15,29 +15,33 @@
  * along with BluTech.  If not, see <http://www.gnu.org/licenses/>.
  *******************************************************************************/
 
-package com.johnguant.blutech.lib;
 
-public class BlockIds {
+package com.johnguant.blutech.block;
 
-	public final static int BLUORE_ID_DEFAULT = 500;
-	public static int BLUORE_ID;
+import com.johnguant.blutech.BluTech;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
+
+public class BlockRhodiumOre extends Block {
 	
-	public final static int ALUMINIUMORE_ID_DEFAULT = 501;
-	public static int ALUMINIUMORE_ID;
+	public BlockRhodiumOre(int id) {
+		super(id, Material.rock);
+		setHardness(4.0F);
+		setStepSound(Block.soundMetalFootstep);
+		setUnlocalizedName("rhodiumOre");
+		setCreativeTab(BluTech.tabsBluTech);
+		textureName = "rhodiumOre";
+	}
 	
-	public final static int COPPERORE_ID_DEFAULT = 502;
-	public static int COPPERORE_ID;
-	
-	public final static int TINORE_ID_DEFAULT = 503;
-	public static int TINORE_ID;
-	
-	public final static int LEADORE_ID_DEFAULT = 504;
-	public static int LEADORE_ID;
-	
-	public final static int RHODIUMORE_ID_DEFAULT = 505;
-	public static int RHODIUMORE_ID;
-	
-	public final static int REMBONITEORE_ID_DEFAULT = 506;
-	public static int REMBONITEORE_ID;
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void registerIcons(IconRegister iconRegister) {
+		this.blockIcon = iconRegister.registerIcon("blutech:"
+				+ (this.getUnlocalizedName().substring(5)));
+	}
 
 }

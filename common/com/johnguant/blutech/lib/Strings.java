@@ -39,6 +39,10 @@ public class Strings {
 
 	public static final String TINORE_NAME = "TinOre";
 	
-	public static final String LEADORE_NAME = "LeadOre";	
+	public static final String LEADORE_NAME = "LeadOre";
+	
+	public static final String RHODIUMORE_NAME = "RhodiumOre";
+	
+	public static final String REMBONITEORE_NAME = "RemboniteOre";
 	
 }
