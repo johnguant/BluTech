@@ -34,6 +34,7 @@ public class BluItems {
 	public static Item leadIngot;
 	public static Item copperIngot;
 	public static Item tinIngot;
+	public static Item rembonite;
 
 	public static void init() {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
@@ -60,6 +61,10 @@ public class BluItems {
 		tinIngot = new ItemTin(ItemIds.TININGOT_ID);
 		GameRegistry.registerItem(tinIngot, Strings.TININGOT_NAME);
 		OreDictionary.registerOre("ingotTin", new ItemStack(tinIngot));
+		
+		rembonite = new ItemRemboniteGem(ItemIds.REMBONITE_ID);
+		GameRegistry.registerItem(rembonite, Strings.REMBONITE_NAME);
+		OreDictionary.registerOre("gemrembonite", new ItemStack(rembonite));
 		
 		
 	}

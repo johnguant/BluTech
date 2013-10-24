@@ -74,7 +74,7 @@ public class ConfigurationHandler {
 			ItemIds.BLUDUST_ID = config.getItem(Strings.BLUDUST_NAME,
 					ItemIds.BLUDUST_ID_DEFAULT).getInt(
 					ItemIds.BLUDUST_ID_DEFAULT);
-
+			
 			ItemIds.BLUINGOT_ID = config.getItem(Strings.BLUINGOT_NAME,
 					ItemIds.BLUINGOT_ID_DEFAULT).getInt(
 					ItemIds.BLUINGOT_ID_DEFAULT);
@@ -94,6 +94,10 @@ public class ConfigurationHandler {
 			ItemIds.TININGOT_ID = config.getItem(Strings.TININGOT_NAME,
 					ItemIds.TININGOT_ID_DEFAULT).getInt(
 					ItemIds.TININGOT_ID_DEFAULT);
+			
+			ItemIds.REMBONITE_ID = config.getItem(Strings.REMBONITE_NAME,
+					ItemIds.REMBONITE_ID_DEFAULT).getInt(
+					ItemIds.REMBONITE_ID_DEFAULT);
 
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID
