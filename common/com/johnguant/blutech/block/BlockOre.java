@@ -34,11 +34,7 @@ public class BlockOre extends Block {
 	// Defines BlockOre
 	public BlockOre(int id) {
 		super(id, Material.rock);
-		setHardness(3.0F);
-		setStepSound(Block.soundStoneFootstep);
-		setUnlocalizedName("bluOre");
 		setCreativeTab(BluTech.tabsBluTech);
-		textureName = "bluOre";
 	}
 
 	@Override
@@ -52,14 +48,14 @@ public class BlockOre extends Block {
 	 * Returns the ID of the items to drop on destruction.
 	 */
 	public int idDropped(int par1, Random par2Random, int par3) {
-		return BluItems.bluDust.itemID;
+		return this.blockID == BluBlocks.bluOre.blockID ? BluItems.bluDust.itemID : this.blockID;
 	}
 
 	/**
 	 * Returns the quantity of items to drop on block destruction.
 	 */
 	public int quantityDropped(Random par1Random) {
-		return 4 + par1Random.nextInt(2);
+		return this.blockID == BluBlocks.bluOre.blockID ? 4 + par1Random.nextInt(2) : 1;
 	}
 
 }
