@@ -36,6 +36,7 @@ public class BluBlocks {
 	public static Block leadOre;
 	public static Block rhodiumOre;
 	public static Block remboniteOre;
+	public static Block silverOre;
 	
 	public static void init() {
 		bluOre = new BlockOre(BlockIds.BLUORE_ID);
@@ -72,6 +73,11 @@ public class BluBlocks {
 		GameRegistry.registerBlock(remboniteOre, "remboniteOre");
 		MinecraftForge.setBlockHarvestLevel(remboniteOre, "pickaxe", 3);
 		OreDictionary.registerOre("oreRembonite", new ItemStack(remboniteOre));
+		
+		silverOre = new BlockSilverOre(BlockIds.SILVERORE_ID);
+		GameRegistry.registerBlock(silverOre, "silverOre");
+		MinecraftForge.setBlockHarvestLevel(silverOre, "pickaxe", 2);
+		OreDictionary.registerOre("oreSilver", new ItemStack(silverOre));
 	}
 
 }

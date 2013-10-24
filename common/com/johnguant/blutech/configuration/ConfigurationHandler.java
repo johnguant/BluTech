@@ -67,6 +67,10 @@ public class ConfigurationHandler {
 					BlockIds.REMBONITEORE_ID_DEFAULT).getInt(
 					BlockIds.REMBONITEORE_ID_DEFAULT);
 			
+			BlockIds.SILVERORE_ID = config.getBlock(Strings.SILVERORE_NAME,
+					BlockIds.SILVERORE_ID_DEFAULT).getInt(
+					BlockIds.SILVERORE_ID_DEFAULT);
+			
 			ItemIds.BLUDUST_ID = config.getItem(Strings.BLUDUST_NAME,
 					ItemIds.BLUDUST_ID_DEFAULT).getInt(
 					ItemIds.BLUDUST_ID_DEFAULT);

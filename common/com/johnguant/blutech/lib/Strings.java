@@ -45,4 +45,6 @@ public class Strings {
 	
 	public static final String REMBONITEORE_NAME = "RemboniteOre";
 	
+	public static final String SILVERORE_NAME = "SilverOre";
+	
 }

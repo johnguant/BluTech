@@ -39,5 +39,8 @@ public class BlockIds {
 	
 	public final static int REMBONITEORE_ID_DEFAULT = 506;
 	public static int REMBONITEORE_ID;
-
+	
+	public final static int SILVERORE_ID_DEFAULT = 507;
+	public static int SILVERORE_ID;
+	
 }
