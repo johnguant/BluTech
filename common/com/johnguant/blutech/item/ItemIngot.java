@@ -27,10 +27,9 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemIngot extends Item {
 
-	public ItemIngot(int par1) 
+	public ItemIngot(int id) 
 	{
-		super(par1);
-		setUnlocalizedName("bluAlloyIngot");
+		super(id);
 		setCreativeTab(BluTech.tabsBluTech);
 	}
 	

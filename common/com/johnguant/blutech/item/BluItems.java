@@ -40,33 +40,38 @@ public class BluItems {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
 		GameRegistry.registerItem(bluDust, Strings.BLUDUST_NAME);
 		OreDictionary.registerOre("dustBlu", new ItemStack(bluDust));
-		
-		bluAlloyIngot = new ItemIngot(ItemIds.BLUINGOT_ID);
+
+		bluAlloyIngot = new ItemIngot(ItemIds.BLUINGOT_ID)
+				.setUnlocalizedName("bluAlloyIngot");
 		GameRegistry.registerItem(bluAlloyIngot, Strings.BLUINGOT_NAME);
-		OreDictionary.registerOre("ingotBluAlloy", new ItemStack(bluAlloyIngot));
-		
-		aluminiumIngot = new ItemAluminium(ItemIds.ALUMINIUMINGOT_ID);
+		OreDictionary
+				.registerOre("ingotBluAlloy", new ItemStack(bluAlloyIngot));
+
+		aluminiumIngot = new ItemIngot(ItemIds.ALUMINIUMINGOT_ID)
+				.setUnlocalizedName("aluminiumIngot");
 		GameRegistry.registerItem(aluminiumIngot, Strings.ALUMINIUMORE_NAME);
-		OreDictionary.registerOre("ingotAluminium", new ItemStack(aluminiumIngot));
-		
-		leadIngot = new ItemLeadIngot(ItemIds.LEADINGOT_ID);
+		OreDictionary.registerOre("ingotAluminium", new ItemStack(
+				aluminiumIngot));
+
+		leadIngot = new ItemIngot(ItemIds.LEADINGOT_ID)
+				.setUnlocalizedName("leadIngot");
 		GameRegistry.registerItem(leadIngot, Strings.LEADINGOT_NAME);
 		OreDictionary.registerOre("ingotlead", new ItemStack(leadIngot));
-		
-		
-		copperIngot = new ItemCopper(ItemIds.COPPERINGOT_ID);
+
+		copperIngot = new ItemIngot(ItemIds.COPPERINGOT_ID)
+				.setUnlocalizedName("copperIngot");
 		GameRegistry.registerItem(copperIngot, Strings.COPPERINGOT_NAME);
 		OreDictionary.registerOre("ingotCopper", new ItemStack(copperIngot));
-		
-		tinIngot = new ItemTin(ItemIds.TININGOT_ID);
+
+		tinIngot = new ItemIngot(ItemIds.TININGOT_ID)
+				.setUnlocalizedName("tinIngot");
 		GameRegistry.registerItem(tinIngot, Strings.TININGOT_NAME);
 		OreDictionary.registerOre("ingotTin", new ItemStack(tinIngot));
-		
+
 		rembonite = new ItemRemboniteGem(ItemIds.REMBONITE_ID);
 		GameRegistry.registerItem(rembonite, Strings.REMBONITE_NAME);
 		OreDictionary.registerOre("gemrembonite", new ItemStack(rembonite));
-		
-		
+
 	}
 
 }
