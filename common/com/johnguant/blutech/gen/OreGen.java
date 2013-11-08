@@ -46,21 +46,21 @@ public class OreGen implements IWorldGenerator {
 	private void generateOverworld(World world, Random random, int x, int z) {
 
 		this.addOreSpawn(BluBlocks.bluOre, world, random, x, z, 16, 16,
-				16 + random.nextInt(3), 5, 15, 70);
+				13 + random.nextInt(3), 5, 15, 70);
 		this.addOreSpawn(BluBlocks.tinOre, world, random, x, z, 16, 16,
-				16 + random.nextInt(3), 5, 15, 70);
+				12 + random.nextInt(3), 5, 15, 70);
 		this.addOreSpawn(BluBlocks.copperOre, world, random, x, z, 16, 16,
-				16 + random.nextInt(3), 5, 15, 70);
+				12 + random.nextInt(3), 5, 15, 70);
 		this.addOreSpawn(BluBlocks.leadOre, world, random, x, z, 16, 16,
-				16 + random.nextInt(3), 5, 15, 70);
+				7 + random.nextInt(3), 5, 15, 70);
 		this.addOreSpawn(BluBlocks.aluminiumOre, world, random, x, z, 16, 16,
-				16 + random.nextInt(3), 5, 15, 70);
+				10 + random.nextInt(3), 5, 15, 70);
 		this.addOreSpawn(BluBlocks.silverOre, world, random, x, z, 16, 16,
-				16 + random.nextInt(3), 5, 15, 70);
+				8 + random.nextInt(3), 5, 15, 70);
 		this.addOreSpawn(BluBlocks.rhodiumOre, world, random, x, z, 16, 16,
-				16 + random.nextInt(3), 5, 15, 70);
+				8 + random.nextInt(3), 5, 15, 70);
 		this.addOreSpawn(BluBlocks.remboniteOre, world, random, x, z, 16, 16,
-				16 + random.nextInt(3), 5, 15, 70);
+				5 + random.nextInt(3), 5, 15, 70);
 		
 	}
 
