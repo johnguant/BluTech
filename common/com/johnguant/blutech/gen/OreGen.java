@@ -49,6 +49,18 @@ public class OreGen implements IWorldGenerator {
 				16 + random.nextInt(3), 5, 15, 70);
 		this.addOreSpawn(BluBlocks.tinOre, world, random, x, z, 16, 16,
 				16 + random.nextInt(3), 5, 15, 70);
+		this.addOreSpawn(BluBlocks.copperOre, world, random, x, z, 16, 16,
+				16 + random.nextInt(3), 5, 15, 70);
+		this.addOreSpawn(BluBlocks.leadOre, world, random, x, z, 16, 16,
+				16 + random.nextInt(3), 5, 15, 70);
+		this.addOreSpawn(BluBlocks.aluminiumOre, world, random, x, z, 16, 16,
+				16 + random.nextInt(3), 5, 15, 70);
+		this.addOreSpawn(BluBlocks.silverOre, world, random, x, z, 16, 16,
+				16 + random.nextInt(3), 5, 15, 70);
+		this.addOreSpawn(BluBlocks.rhodiumOre, world, random, x, z, 16, 16,
+				16 + random.nextInt(3), 5, 15, 70);
+		this.addOreSpawn(BluBlocks.remboniteOre, world, random, x, z, 16, 16,
+				16 + random.nextInt(3), 5, 15, 70);
 		
 	}
 
