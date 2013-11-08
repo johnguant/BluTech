@@ -17,11 +17,14 @@
 
 package com.johnguant.blutech.block;
 
+import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.oredict.OreDictionary;
 
+import com.johnguant.blutech.item.BluItems;
 import com.johnguant.blutech.lib.BlockIds;
 import com.johnguant.blutech.lib.Strings;
 
@@ -87,7 +90,7 @@ public class BluBlocks {
 		GameRegistry.registerBlock(remboniteOre, "remboniteOre");
 		MinecraftForge.setBlockHarvestLevel(remboniteOre, "pickaxe", 3);
 		OreDictionary.registerOre("oreRembonite", new ItemStack(remboniteOre));
-
+				
 		silverOre = new BlockOre(BlockIds.SILVERORE_ID).setHardness(3.0F)
 				.setStepSound(Block.soundStoneFootstep)
 				.setUnlocalizedName("silverOre");

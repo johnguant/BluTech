@@ -47,7 +47,9 @@ public class OreGen implements IWorldGenerator {
 
 		this.addOreSpawn(BluBlocks.bluOre, world, random, x, z, 16, 16,
 				16 + random.nextInt(3), 5, 15, 70);
-
+		this.addOreSpawn(BluBlocks.tinOre, world, random, x, z, 16, 16,
+				16 + random.nextInt(3), 5, 15, 70);
+		
 	}
 
 	private void generateNether(World world, Random random, int x, int z) {

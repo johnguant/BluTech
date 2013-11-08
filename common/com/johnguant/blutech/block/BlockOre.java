@@ -22,6 +22,7 @@ import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.item.Item;
 
 import com.johnguant.blutech.BluTech;
 import com.johnguant.blutech.item.BluItems;
@@ -48,14 +49,22 @@ public class BlockOre extends Block {
 	 * Returns the ID of the items to drop on destruction.
 	 */
 	public int idDropped(int par1, Random par2Random, int par3) {
-		return this.blockID == BluBlocks.bluOre.blockID ? BluItems.bluDust.itemID : this.blockID;
+		return this.blockID == BluBlocks.bluOre.blockID ? BluItems.bluDust.itemID : (this.blockID == BluBlocks.remboniteOre.blockID ? BluItems.rembonite.itemID : this.blockID);
 	}
-
-	/**
+	
+	 //public int idDropped(int par1, Random par2Random, int par3)
+	    //{
+	   //     return this.blockID == Block.oreCoal.blockID ? Item.coal.itemID : (this.blockID == Block.oreDiamond.blockID ? Item.diamond.itemID : (this.blockID == Block.oreLapis.blockID ? Item.dyePowder.itemID : (this.blockID == Block.oreEmerald.blockID ? Item.emerald.itemID : (this.blockID == Block.oreNetherQuartz.blockID ? Item.netherQuartz.itemID : this.blockID))));
+	    //}
+	
+		/**
 	 * Returns the quantity of items to drop on block destruction.
 	 */
 	public int quantityDropped(Random par1Random) {
 		return this.blockID == BluBlocks.bluOre.blockID ? 4 + par1Random.nextInt(2) : 1;
 	}
-
+	
+	
 }
+
+
