@@ -75,7 +75,7 @@ public class OreGen implements IWorldGenerator {
 	public void addOreSpawn(Block block, World world, Random random,
 			int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize,
 			int chancesToSpawn, int minY, int maxY) {
-		@SuppressWarnings("unused")
+
 		int maxPossY = minY + (maxY - 1);
 		assert maxY > minY : "The maximum Y must be greater than the Minimum Y";
 		assert maxX > 0 && maxX <= 16 : "addOreSpawn: The Maximum X must be greater than 0 and less than 16";

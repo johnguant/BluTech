@@ -39,5 +39,8 @@ public class ItemIds {
 	
 	public final static int REMBONITE_ID_DEFAULT = 1007;
 	public static int REMBONITE_ID;
+	
+	public final static int AERIDIUM_ID_DEFAULT = 1008;
+	public static int AERIDIUM_ID;
 		
 }
