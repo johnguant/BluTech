@@ -72,6 +72,22 @@ public class OreGen implements IWorldGenerator {
 
 	}
 
+	
+	/**
+	 * Adds an Ore Spawn to Minecraft. Simply register all Ores to spawn with this method in your Generation method in your IWorldGeneration extending Class
+	 *
+	 * @param block  The Block to spawn
+	 * @param world   The World to spawn in
+	 * @param random   A Random object for retrieving random positions within the world to spawn the Block
+	 * @param blockXPos   An int for passing the X-Coordinate for the Generation method
+	 * @param blockZPos   An int for passing the Z-Coordinate for the Generation method
+	 * @param maxX   An int for setting the maximum X-Coordinate values for spawning on the X-Axis on a Per-Chunk basis
+	 * @param maxZ   An int for setting the maximum Z-Coordinate values for spawning on the Z-Axis on a Per-Chunk basis
+	 * @param maxVeinSize   An int for setting the maximum size of a vein
+	 * @param chancesToSpawn   An int for the Number of chances available for the Block to spawn per-chunk
+	 * @param minY   An int for the minimum Y-Coordinate height at which this block may spawn
+	 * @param maxY   An int for the maximum Y-Coordinate height at which this block may spawn
+	 **/
 	public void addOreSpawn(Block block, World world, Random random,
 			int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize,
 			int chancesToSpawn, int minY, int maxY) {
