@@ -50,11 +50,6 @@ public class BlockOre extends Block {
 		return this.blockID == BluBlocks.bluOre.blockID ? BluItems.bluDust.itemID : (this.blockID == BluBlocks.remboniteOre.blockID ? BluItems.rembonite.itemID : this.blockID);
 	}
 	
-	 //public int idDropped(int par1, Random par2Random, int par3)
-	    //{
-	   //     return this.blockID == Block.oreCoal.blockID ? Item.coal.itemID : (this.blockID == Block.oreDiamond.blockID ? Item.diamond.itemID : (this.blockID == Block.oreLapis.blockID ? Item.dyePowder.itemID : (this.blockID == Block.oreEmerald.blockID ? Item.emerald.itemID : (this.blockID == Block.oreNetherQuartz.blockID ? Item.netherQuartz.itemID : this.blockID))));
-	    //}
-	
 		/**
 	 * Returns the quantity of items to drop on block destruction.
 	 */
