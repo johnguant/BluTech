@@ -35,7 +35,9 @@ public class Strings {
 	
 	public static final String REMBONITE_NAME = "Rembonite";
 	
-	public static final String AERIDIUM_NAME = "Aeridium";
+	public static final String ERIDIAN_NAME = "Eridian";
+	
+	public static final String HEADRON_NAME = "Headron";
 	
 	public static final String TININGOT_NAME = "TinIngot";
 	

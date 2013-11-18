@@ -98,7 +98,15 @@ public class ConfigurationHandler {
 			ItemIds.REMBONITE_ID = config.getItem(Strings.REMBONITE_NAME,
 					ItemIds.REMBONITE_ID_DEFAULT).getInt(
 					ItemIds.REMBONITE_ID_DEFAULT);
-
+			
+			ItemIds.ERIDIAN_ID = config.getItem(Strings.ERIDIAN_NAME,
+					ItemIds.ERIDIAN_ID_DEFAULT).getInt(
+					ItemIds.ERIDIAN_ID_DEFAULT);
+			
+			ItemIds.HEADRON_ID = config.getItem(Strings.HEADRON_NAME,
+					ItemIds.HEADRON_ID_DEFAULT).getInt(
+					ItemIds.HEADRON_ID_DEFAULT);
+					
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID
 					+ "Has a problem loading the config file");

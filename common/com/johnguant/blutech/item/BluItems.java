@@ -35,7 +35,8 @@ public class BluItems {
 	public static Item copperIngot;
 	public static Item tinIngot;
 	public static Item rembonite;
-	public static Item aeridium;
+	public static Item eridian;
+	public static Item headron;
 
 	public static void init() {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
@@ -71,12 +72,17 @@ public class BluItems {
 
 		rembonite = new ItemRemboniteGem(ItemIds.REMBONITE_ID);
 		GameRegistry.registerItem(rembonite, Strings.REMBONITE_NAME);
-		OreDictionary.registerOre("gemrembonite", new ItemStack(rembonite));
+		OreDictionary.registerOre("gemRembonite", new ItemStack(rembonite));
 		
-		aeridium = new ItemIngot(ItemIds.AERIDIUM_ID)
-				.setUnlocalizedName("aeridium");
-		GameRegistry.registerItem(aeridium, Strings.AERIDIUM_NAME);
-		OreDictionary.registerOre("ingotaeridium", new ItemStack(aeridium));
+		eridian = new ItemIngot(ItemIds.ERIDIAN_ID)
+			.setUnlocalizedName("aeridium");
+		GameRegistry.registerItem(eridian, Strings.ERIDIAN_NAME);
+		OreDictionary.registerOre("ingotEridian", new ItemStack(eridian));
+		
+		headron = new ItemHeadron(ItemIds.HEADRON_ID)
+				.setUnlocalizedName("headron");
+		GameRegistry.registerItem(headron, Strings.HEADRON_NAME);
+		OreDictionary.registerOre("orbHeadron", new ItemStack(headron));
 		
 	}
 
