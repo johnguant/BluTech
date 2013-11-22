@@ -19,31 +19,31 @@ package com.johnguant.blutech.lib;
 
 public class ItemIds {
 
-	public final static int BLUDUST_ID_DEFAULT = 1001;
+	public final static int BLUDUST_ID_DEFAULT = 4083;
 	public static int BLUDUST_ID;
 
-	public final static int BLUINGOT_ID_DEFAULT = 1007;
+	public final static int BLUINGOT_ID_DEFAULT = 4084;
 	public static int BLUINGOT_ID;
 	
-	public final static int ALUMINIUMINGOT_ID_DEFAULT = 1003;
+	public final static int ALUMINIUMINGOT_ID_DEFAULT = 4085;
 	public static int ALUMINIUMINGOT_ID;
 	
-	public final static int LEADINGOT_ID_DEFAULT = 1004;
+	public final static int LEADINGOT_ID_DEFAULT = 4086;
 	public static int LEADINGOT_ID;
 	
-	public final static int COPPERINGOT_ID_DEFAULT = 1005;
+	public final static int COPPERINGOT_ID_DEFAULT = 4087;
 	public static int COPPERINGOT_ID;
 	
-	public final static int TININGOT_ID_DEFAULT = 1006;
+	public final static int TININGOT_ID_DEFAULT = 4088;
 	public static int TININGOT_ID;
 	
-	public final static int REMBONITE_ID_DEFAULT = 1007;
+	public final static int REMBONITE_ID_DEFAULT = 4089;
 	public static int REMBONITE_ID;
 	
-	public final static int ERIDIAN_ID_DEFAULT = 1008;
+	public final static int ERIDIAN_ID_DEFAULT = 4090;
 	public static int ERIDIAN_ID;
 	
-	public final static int HEADRON_ID_DEFAULT = 1009;
+	public final static int HEADRON_ID_DEFAULT = 4091;
 	public static int HEADRON_ID;
 		
 }
