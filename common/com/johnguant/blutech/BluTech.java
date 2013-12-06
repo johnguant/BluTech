@@ -20,6 +20,7 @@ package com.johnguant.blutech;
 import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 
 import com.johnguant.blutech.block.BluBlocks;
 import com.johnguant.blutech.configuration.ConfigurationHandler;
@@ -67,6 +68,23 @@ public class BluTech {
 	public void load(FMLInitializationEvent event) {
 
 		GameRegistry.registerWorldGenerator(new OreGen());
+		
+		//Example 1:				ItemStack dirtStack 		= new ItemStack(Block.dirt);
+        //Example 2:				ItemStack diamondsStack 	= new ItemStack(Item.diamond, 64);
+        ItemStack aluminiumStack 	= new ItemStack(BluItems.aluminiumIngot, 1);
+        ItemStack copperStack 		= new ItemStack(BluItems.copperIngot, 1);
+        ItemStack tinStack 			= new ItemStack(BluItems.tinIngot, 1);
+        ItemStack leadStack 		= new ItemStack(BluItems.leadIngot, 1);
+        ItemStack silverStack		= new ItemStack(BluItems.silverIngot, 1);
+        
+		
+		//Example Shapeless:	GameRegistry.addShapelessRecipe(diamondsStack, dirtStack);
+		//Example Smelting:  	GameRegistry.addSmelting(Block.dirt.blockID, diamondsStack, 0.7f);
+		GameRegistry.addSmelting(BluBlocks.aluminiumOre.blockID, aluminiumStack, 0.7f);
+		GameRegistry.addSmelting(BluBlocks.copperOre.blockID, copperStack, 0.5f);
+		GameRegistry.addSmelting(BluBlocks.tinOre.blockID, tinStack, 0.5f);
+		GameRegistry.addSmelting(BluBlocks.leadOre.blockID, leadStack, 0.7f);	
+		GameRegistry.addSmelting(BluBlocks.silverOre.blockID, silverStack, 1.0f);
 
 	}
 

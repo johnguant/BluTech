@@ -36,7 +36,7 @@ public class ItemIds {
 	
 	public final static int TININGOT_ID_DEFAULT = 4088;
 	public static int TININGOT_ID;
-	
+		
 	public final static int REMBONITE_ID_DEFAULT = 4089;
 	public static int REMBONITE_ID;
 	
@@ -46,4 +46,9 @@ public class ItemIds {
 	public final static int HEADRON_ID_DEFAULT = 4091;
 	public static int HEADRON_ID;
 		
+	public final static int STEELINGOT_ID_DEFAULT = 4092;
+	public static int STEELINGOT_ID;
+	
+	public final static int SILVERINGOT_ID_DEFAULT = 4093;
+	public static int SILVERINGOT_ID;
 }

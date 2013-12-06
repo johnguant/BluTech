@@ -37,6 +37,8 @@ public class BluItems {
 	public static Item rembonite;
 	public static Item eridian;
 	public static Item headron;
+	public static Item steelIngot;
+	public static Item silverIngot;
 
 	public static void init() {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
@@ -46,14 +48,12 @@ public class BluItems {
 		bluAlloyIngot = new ItemIngot(ItemIds.BLUINGOT_ID)
 				.setUnlocalizedName("bluAlloyIngot");
 		GameRegistry.registerItem(bluAlloyIngot, Strings.BLUINGOT_NAME);
-		OreDictionary
-				.registerOre("ingotBluAlloy", new ItemStack(bluAlloyIngot));
+		OreDictionary.registerOre("ingotBluAlloy", new ItemStack(bluAlloyIngot));
 
 		aluminiumIngot = new ItemIngot(ItemIds.ALUMINIUMINGOT_ID)
 				.setUnlocalizedName("aluminiumIngot");
 		GameRegistry.registerItem(aluminiumIngot, Strings.ALUMINIUMORE_NAME);
-		OreDictionary.registerOre("ingotAluminium", new ItemStack(
-				aluminiumIngot));
+		OreDictionary.registerOre("ingotAluminium", new ItemStack(aluminiumIngot));
 
 		leadIngot = new ItemIngot(ItemIds.LEADINGOT_ID)
 				.setUnlocalizedName("leadIngot");
@@ -83,6 +83,16 @@ public class BluItems {
 				.setUnlocalizedName("headron");
 		GameRegistry.registerItem(headron, Strings.HEADRON_NAME);
 		OreDictionary.registerOre("orbHeadron", new ItemStack(headron));
+		
+		steelIngot = new ItemIngot(ItemIds.STEELINGOT_ID)
+				.setUnlocalizedName("steelIngot");
+		GameRegistry.registerItem(steelIngot, Strings.STEELINGOT_NAME);
+		OreDictionary.registerOre("ingotSteel", new ItemStack(steelIngot));
+		
+		silverIngot = new ItemIngot(ItemIds.SILVERINGOT_ID)
+				.setUnlocalizedName("silverIngot");
+		GameRegistry.registerItem(silverIngot, Strings.SILVERINGOT_NAME);
+		OreDictionary.registerOre("ingotSilver", new ItemStack(silverIngot));
 		
 	}
 

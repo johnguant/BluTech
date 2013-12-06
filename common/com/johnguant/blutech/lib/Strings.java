@@ -33,6 +33,10 @@ public class Strings {
 	
 	public static final String COPPERINGOT_NAME = "CopperIngot";
 	
+	public static final String STEELINGOT_NAME = "SteelIngot";
+	
+	public static final String SILVERINGOT_NAME = "SilverIngot";
+	
 	public static final String REMBONITE_NAME = "Rembonite";
 	
 	public static final String ERIDIAN_NAME = "Eridian";

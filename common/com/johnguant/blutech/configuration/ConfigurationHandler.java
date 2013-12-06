@@ -106,6 +106,14 @@ public class ConfigurationHandler {
 			ItemIds.HEADRON_ID = config.getItem(Strings.HEADRON_NAME,
 					ItemIds.HEADRON_ID_DEFAULT).getInt(
 					ItemIds.HEADRON_ID_DEFAULT);
+			
+			ItemIds.STEELINGOT_ID = config.getItem(Strings.STEELINGOT_NAME,
+					ItemIds.STEELINGOT_ID_DEFAULT).getInt(
+					ItemIds.STEELINGOT_ID_DEFAULT);
+			
+			ItemIds.SILVERINGOT_ID = config.getItem(Strings.SILVERINGOT_NAME,
+					ItemIds.SILVERINGOT_ID_DEFAULT).getInt(
+					ItemIds.SILVERINGOT_ID_DEFAULT);
 					
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID
