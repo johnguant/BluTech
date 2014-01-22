@@ -43,4 +43,7 @@ public class BlockIds {
 	public final static int SILVERORE_ID_DEFAULT = 507;
 	public static int SILVERORE_ID;
 	
+	public final static int FOSSILORE_ID_DEFAULT = 508;
+	public static int FOSSILORE_ID;
+	
 }

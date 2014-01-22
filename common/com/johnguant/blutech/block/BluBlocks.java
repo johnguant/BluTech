@@ -37,37 +37,43 @@ public class BluBlocks {
 	public static Block rhodiumOre;
 	public static Block remboniteOre;
 	public static Block silverOre;
+	public static Block fossilOre;
 
 	public static void init() {
-		bluOre = new BlockOre(BlockIds.BLUORE_ID).setHardness(3.0F)
+		bluOre = new BlockOre(BlockIds.BLUORE_ID)
+				.setHardness(3.0F)
 				.setStepSound(Block.soundStoneFootstep)
 				.setUnlocalizedName("bluOre");
 		GameRegistry.registerBlock(bluOre, Strings.BLUORE_NAME);
 		MinecraftForge.setBlockHarvestLevel(bluOre, "pickaxe", 2);
 		OreDictionary.registerOre("oreBlu", new ItemStack(bluOre));
 
-		aluminiumOre = new BlockOre(BlockIds.ALUMINIUMORE_ID).setHardness(2.0F)
+		aluminiumOre = new BlockOre(BlockIds.ALUMINIUMORE_ID)
+				.setHardness(2.0F)
 				.setStepSound(Block.soundStoneFootstep)
 				.setUnlocalizedName("aluminiumOre");
 		GameRegistry.registerBlock(aluminiumOre, "aluminiumOre");
 		MinecraftForge.setBlockHarvestLevel(aluminiumOre, "pickaxe", 1);
 		OreDictionary.registerOre("oreAluminium", new ItemStack(aluminiumOre));
 
-		copperOre = new BlockOre(BlockIds.COPPERORE_ID).setHardness(2.0F)
+		copperOre = new BlockOre(BlockIds.COPPERORE_ID)
+				.setHardness(2.0F)
 				.setStepSound(Block.soundStoneFootstep)
 				.setUnlocalizedName("copperOre");
 		GameRegistry.registerBlock(copperOre, "copperOre");
 		MinecraftForge.setBlockHarvestLevel(copperOre, "pickaxe", 1);
 		OreDictionary.registerOre("oreCopper", new ItemStack(copperOre));
 
-		tinOre = new BlockOre(BlockIds.TINORE_ID).setHardness(2.0F)
+		tinOre = new BlockOre(BlockIds.TINORE_ID)
+				.setHardness(2.0F)
 				.setStepSound(Block.soundStoneFootstep)
 				.setUnlocalizedName("tinOre");
 		GameRegistry.registerBlock(tinOre, "tinOre");
 		MinecraftForge.setBlockHarvestLevel(tinOre, "pickaxe", 1);
 		OreDictionary.registerOre("oreTin", new ItemStack(tinOre));
 
-		leadOre = new BlockOre(BlockIds.LEADORE_ID).setHardness(3.0F)
+		leadOre = new BlockOre(BlockIds.LEADORE_ID)
+				.setHardness(3.0F)
 				.setStepSound(Block.soundStoneFootstep)
 				.setUnlocalizedName("leadOre");
 		GameRegistry.registerBlock(leadOre, "leadOre");
@@ -75,25 +81,36 @@ public class BluBlocks {
 		OreDictionary.registerOre("oreLead", new ItemStack(leadOre));
 
 		rhodiumOre = new BlockOre(BlockIds.RHODIUMORE_ID)
-				.setHardness(4.0F).setStepSound(Block.soundStoneFootstep)
+				.setHardness(4.0F)
+				.setStepSound(Block.soundStoneFootstep)
 				.setUnlocalizedName("rhodiumOre");
 		GameRegistry.registerBlock(rhodiumOre, "rhodiumOre");
 		MinecraftForge.setBlockHarvestLevel(rhodiumOre, "pickaxe", 3);
 		OreDictionary.registerOre("oreRhodium", new ItemStack(rhodiumOre));
 
 		remboniteOre = new BlockOre(BlockIds.REMBONITEORE_ID)
-				.setHardness(5.0F).setStepSound(Block.soundStoneFootstep)
+				.setHardness(5.0F)
+				.setStepSound(Block.soundStoneFootstep)
 				.setUnlocalizedName("remboniteOre");
 		GameRegistry.registerBlock(remboniteOre, "remboniteOre");
 		MinecraftForge.setBlockHarvestLevel(remboniteOre, "pickaxe", 3);
 		OreDictionary.registerOre("oreRembonite", new ItemStack(remboniteOre));
 				
-		silverOre = new BlockOre(BlockIds.SILVERORE_ID).setHardness(3.0F)
+		silverOre = new BlockOre(BlockIds.SILVERORE_ID)
+				.setHardness(3.0F)
 				.setStepSound(Block.soundStoneFootstep)
 				.setUnlocalizedName("silverOre");
 		GameRegistry.registerBlock(silverOre, "silverOre");
 		MinecraftForge.setBlockHarvestLevel(silverOre, "pickaxe", 2);
 		OreDictionary.registerOre("oreSilver", new ItemStack(silverOre));
+		
+		fossilOre = new BlockOre(BlockIds.FOSSILORE_ID)
+				.setHardness(2.0f)
+				.setStepSound(Block.soundStoneFootstep)
+				.setUnlocalizedName("fossilOre");
+		GameRegistry.registerBlock(fossilOre, "fossilOre");
+		MinecraftForge.setBlockHarvestLevel(fossilOre, "pickaxe", 0);
+		//Not meant to be ore dictionaried.
 	}
 
 }

@@ -25,7 +25,7 @@ public class Strings {
 
 	public static final String BLUINGOT_NAME = "BluIngot";
 	
-	public static final String ALUMINIUMORE_NAME = "AluminiumOre";
+	public static final String FOSSIL_NAME = "Fossil";
 
 	public static final String ALUMINIUMINGOT_NAME = "AluminiumIngot";
 	
@@ -36,7 +36,7 @@ public class Strings {
 	public static final String STEELINGOT_NAME = "SteelIngot";
 	
 	public static final String SILVERINGOT_NAME = "SilverIngot";
-	
+		
 	public static final String REMBONITE_NAME = "Rembonite";
 	
 	public static final String ERIDIAN_NAME = "Eridian";
@@ -44,6 +44,8 @@ public class Strings {
 	public static final String HEADRON_NAME = "Headron";
 	
 	public static final String TININGOT_NAME = "TinIngot";
+	
+	public static final String ALUMINIUMORE_NAME = "AluminiumOre";
 	
 	public static final String COPPERORE_NAME = "CopperOre";
 
@@ -56,5 +58,9 @@ public class Strings {
 	public static final String REMBONITEORE_NAME = "RemboniteOre";
 	
 	public static final String SILVERORE_NAME = "SilverOre";
+	
+	public static final String FOSSILORE_NAME = "FossilOre";
+	
+	//Rhys, are the block strings used??
 	
 }

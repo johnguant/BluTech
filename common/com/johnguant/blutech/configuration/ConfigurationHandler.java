@@ -71,6 +71,10 @@ public class ConfigurationHandler {
 					BlockIds.SILVERORE_ID_DEFAULT).getInt(
 					BlockIds.SILVERORE_ID_DEFAULT);
 			
+			BlockIds.FOSSILORE_ID = config.getBlock(Strings.FOSSILORE_NAME,
+					BlockIds.FOSSILORE_ID_DEFAULT).getInt(
+					BlockIds.FOSSILORE_ID_DEFAULT);
+			
 			ItemIds.BLUDUST_ID = config.getItem(Strings.BLUDUST_NAME,
 					ItemIds.BLUDUST_ID_DEFAULT).getInt(
 					ItemIds.BLUDUST_ID_DEFAULT);
@@ -114,6 +118,10 @@ public class ConfigurationHandler {
 			ItemIds.SILVERINGOT_ID = config.getItem(Strings.SILVERINGOT_NAME,
 					ItemIds.SILVERINGOT_ID_DEFAULT).getInt(
 					ItemIds.SILVERINGOT_ID_DEFAULT);
+			
+			ItemIds.FOSSIL_ID = config.getItem(Strings.FOSSIL_NAME,
+					ItemIds.FOSSIL_ID_DEFAULT).getInt(
+					ItemIds.FOSSIL_ID_DEFAULT);
 					
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID

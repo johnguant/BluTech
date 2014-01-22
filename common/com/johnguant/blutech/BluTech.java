@@ -80,12 +80,18 @@ public class BluTech {
 		
 		//Example Shapeless:	GameRegistry.addShapelessRecipe(diamondsStack, dirtStack);
 		//Example Smelting:  	GameRegistry.addSmelting(Block.dirt.blockID, diamondsStack, 0.7f);
+        
+        //Shaped Recipes:
+        
+        //Shapeless Recipes:
+        
+        //Smelting Recipes:
 		GameRegistry.addSmelting(BluBlocks.aluminiumOre.blockID, aluminiumStack, 0.7f);
 		GameRegistry.addSmelting(BluBlocks.copperOre.blockID, copperStack, 0.5f);
 		GameRegistry.addSmelting(BluBlocks.tinOre.blockID, tinStack, 0.5f);
 		GameRegistry.addSmelting(BluBlocks.leadOre.blockID, leadStack, 0.7f);	
 		GameRegistry.addSmelting(BluBlocks.silverOre.blockID, silverStack, 1.0f);
-
+		
 	}
 
 	@EventHandler

@@ -4,5 +4,10 @@
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Minecraft"/>
+	<classpathentry kind="lib" path="C:/Users/Ryan Cherry/Desktop/1.6.4 Dev Enviroment/apis/Atomic_Science_API_v1.0.0.160.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Ryan Cherry/Desktop/1.6.4 Dev Enviroment/apis/ICBM_API_v1.3.4.281.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Ryan Cherry/Desktop/1.6.4 Dev Enviroment/apis/MDK-v5.6.0.613.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Ryan Cherry/Desktop/1.6.4 Dev Enviroment/apis/TConstruct_Library_1.6.4_5.0.0.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Ryan Cherry/Desktop/1.6.4 Dev Enviroment/apis/UniversalElectricity_API_v2.3.0.197.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
