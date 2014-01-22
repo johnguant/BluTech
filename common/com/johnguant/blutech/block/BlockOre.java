@@ -47,14 +47,14 @@ public class BlockOre extends Block {
 	 * Returns the ID of the items to drop on destruction.
 	 */
 	public int idDropped(int par1, Random par2Random, int par3) {
-		return this.blockID == BluBlocks.bluOre.blockID ? BluItems.bluDust.itemID : (this.blockID == BluBlocks.remboniteOre.blockID ? BluItems.rembonite.itemID : this.blockID);
+		return this.blockID == BluBlocks.bluOre.blockID ? BluItems.bluDust.itemID : (this.blockID == BluBlocks.remboniteOre.blockID ? BluItems.rembonite.itemID : (this.blockID == BluBlocks.fossilOre.blockID ? BluItems.fossil.itemID : this.blockID ));
 	}
 	
 		/**
 	 * Returns the quantity of items to drop on block destruction.
 	 */
 	public int quantityDropped(Random par1Random) {
-		return this.blockID == BluBlocks.bluOre.blockID ? 4 + par1Random.nextInt(2) : 1;
+		return this.blockID == BluBlocks.bluOre.blockID ? 4 + par1Random.nextInt(2) : this.blockID == BluBlocks.fossilOre.blockID ? 2 + par1Random.nextInt(4) :w 1;
 	}
 	
 	
