@@ -76,10 +76,13 @@ public class BluTech {
         ItemStack tinStack 			= new ItemStack(BluItems.tinIngot, 1);
         ItemStack leadStack 		= new ItemStack(BluItems.leadIngot, 1);
         ItemStack silverStack		= new ItemStack(BluItems.silverIngot, 1);
+        ItemStack nickelStack		= new ItemStack(BluItems.nickelIngot,1);
+        ItemStack tungstenStack		= new ItemStack(BluItems.tungstenIngot, 1);
         
 		
 		//Example Shapeless:	GameRegistry.addShapelessRecipe(diamondsStack, dirtStack);
 		//Example Smelting:  	GameRegistry.addSmelting(Block.dirt.blockID, diamondsStack, 0.7f);
+        //Example Shaped:
         
         //Shaped Recipes:
         
@@ -91,6 +94,8 @@ public class BluTech {
 		GameRegistry.addSmelting(BluBlocks.tinOre.blockID, tinStack, 0.5f);
 		GameRegistry.addSmelting(BluBlocks.leadOre.blockID, leadStack, 0.7f);	
 		GameRegistry.addSmelting(BluBlocks.silverOre.blockID, silverStack, 1.0f);
+		GameRegistry.addSmelting(BluBlocks.nickelOre.blockID, nickelStack, 0.5f);
+		GameRegistry.addSmelting(BluBlocks.tungstenOre.blockID, tungstenStack, 1.0f);
 		
 	}
 
