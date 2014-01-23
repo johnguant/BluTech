@@ -19,3 +19,5 @@ Currently Adds:
 
 
 Alloys:
+-Steel
+-Eridian
