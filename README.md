@@ -17,7 +17,3 @@ Currently Adds:
 - Nickel Ore and Ingot
 - Tungsten Ore and Ingot
 
-
-Alloys:
--Steel
--Eridian
