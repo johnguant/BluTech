@@ -65,6 +65,8 @@ public class OreGen implements IWorldGenerator {
 				7 + random.nextInt(3), 5, 15, 60);
 		this.addOreSpawn(BluBlocks.tungstenOre, world, random, x, z, 16, 16,
 				2 + random.nextInt(3), 5, 5, 25);
+		this.addOreSpawn(BluBlocks.fossilOre, world, random, x, z, 16, 16, 
+				8 + random.nextInt(3), 5, 30, 60);
 		
 	}
 
