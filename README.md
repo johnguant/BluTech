@@ -14,3 +14,6 @@ Currently Adds:
 - Aluminium Ore and Ingot  
 - Blu Alloy Ingot  
 - Rhodium Ore  
+- Nickel Ore and Ingot
+- Tungsten Ore and Ingot
+
