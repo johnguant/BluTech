@@ -52,7 +52,4 @@ public class ItemIds {
 	public final static int SILVERINGOT_ID_DEFAULT = 4093;
 	public static int SILVERINGOT_ID;
 	
-	public final static int FOSSIL_ID_DEFAULT = 4094;
-	public static int FOSSIL_ID;
-	
 }

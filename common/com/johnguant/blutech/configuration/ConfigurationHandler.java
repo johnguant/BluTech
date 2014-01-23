@@ -118,10 +118,6 @@ public class ConfigurationHandler {
 			ItemIds.SILVERINGOT_ID = config.getItem(Strings.SILVERINGOT_NAME,
 					ItemIds.SILVERINGOT_ID_DEFAULT).getInt(
 					ItemIds.SILVERINGOT_ID_DEFAULT);
-			
-			ItemIds.FOSSIL_ID = config.getItem(Strings.FOSSIL_NAME,
-					ItemIds.FOSSIL_ID_DEFAULT).getInt(
-					ItemIds.FOSSIL_ID_DEFAULT);
 					
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID

@@ -39,7 +39,6 @@ public class BluItems {
 	public static Item headron;
 	public static Item steelIngot;
 	public static Item silverIngot;
-	public static Item fossil;
 
 	public static void init() {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
@@ -94,12 +93,7 @@ public class BluItems {
 				.setUnlocalizedName("silverIngot");
 		GameRegistry.registerItem(silverIngot, Strings.SILVERINGOT_NAME);
 		OreDictionary.registerOre("ingotSilver", new ItemStack(silverIngot));
-		
-		fossil = new ItemFossil(ItemIds.FOSSIL_ID)
-				.setUnlocalizedName("fossil");
-		GameRegistry.registerItem(fossil, Strings.FOSSIL_NAME);
-		//Not meant to be ore dictionaried
-				
+						
 	}
 
 }
