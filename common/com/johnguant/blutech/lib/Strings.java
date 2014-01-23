@@ -43,6 +43,10 @@ public class Strings {
 	
 	public static final String TININGOT_NAME = "TinIngot";
 	
+	public static final String TUGNSTENINGOT_NAME = "TungstenIngot";
+	
+	public static final String NICKELINGOT_NAME = "NickelIngot";
+	
 	public static final String ALUMINIUMORE_NAME = "AluminiumOre";
 	
 	public static final String COPPERORE_NAME = "CopperOre";

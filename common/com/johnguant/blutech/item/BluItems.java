@@ -39,6 +39,8 @@ public class BluItems {
 	public static Item headron;
 	public static Item steelIngot;
 	public static Item silverIngot;
+	public static Item tungstenIngot;
+	public static Item nickelIngot;
 
 	public static void init() {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
@@ -70,12 +72,13 @@ public class BluItems {
 		GameRegistry.registerItem(tinIngot, Strings.TININGOT_NAME);
 		OreDictionary.registerOre("ingotTin", new ItemStack(tinIngot));
 
-		rembonite = new ItemRemboniteGem(ItemIds.REMBONITE_ID);
+		rembonite = new ItemRemboniteGem(ItemIds.REMBONITE_ID)
+				.setUnlocalizedName("rembonite");
 		GameRegistry.registerItem(rembonite, Strings.REMBONITE_NAME);
 		OreDictionary.registerOre("gemRembonite", new ItemStack(rembonite));
 		
 		eridian = new ItemIngot(ItemIds.ERIDIAN_ID)
-			.setUnlocalizedName("aeridium");
+				.setUnlocalizedName("eridian");
 		GameRegistry.registerItem(eridian, Strings.ERIDIAN_NAME);
 		OreDictionary.registerOre("ingotEridian", new ItemStack(eridian));
 		
@@ -93,7 +96,22 @@ public class BluItems {
 				.setUnlocalizedName("silverIngot");
 		GameRegistry.registerItem(silverIngot, Strings.SILVERINGOT_NAME);
 		OreDictionary.registerOre("ingotSilver", new ItemStack(silverIngot));
+		
+		tungstenIngot = new ItemIngot(ItemIds.TUNGSTENINGOT_ID)
+				.setUnlocalizedName("tungstenIngot");
+		GameRegistry.registerItem(tungstenIngot, Strings.TUGNSTENINGOT_NAME);
+		OreDictionary.registerOre("ingotTungsten", new ItemStack(tungstenIngot));
+		
+		nickelIngot = new ItemIngot(ItemIds.NICKELINGOT_ID)
+				.setUnlocalizedName("nickelIngot");
+		GameRegistry.registerItem(nickelIngot, Strings.NICKELINGOT_NAME);
+		OreDictionary.registerOre("ingotNickel", new ItemStack(nickelIngot));
 						
+	}
+
+	private static void setUnlocalizedName(String string) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

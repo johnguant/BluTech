@@ -11,7 +11,6 @@ public class ItemRemboniteGem extends Item{
 	
 	public ItemRemboniteGem(int par1) {
 		super(par1);
-		setUnlocalizedName("rembonite");
 		setCreativeTab(BluTech.tabsBluTech);
 	}
 	

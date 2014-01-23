@@ -42,7 +42,7 @@ public class ItemIds {
 	
 	public final static int ERIDIAN_ID_DEFAULT = 4090;
 	public static int ERIDIAN_ID;
-	
+
 	public final static int HEADRON_ID_DEFAULT = 4091;
 	public static int HEADRON_ID;
 		
@@ -51,5 +51,11 @@ public class ItemIds {
 	
 	public final static int SILVERINGOT_ID_DEFAULT = 4093;
 	public static int SILVERINGOT_ID;
+	
+	public final static int TUNGSTENINGOT_ID_DEFAULT = 4094;
+	public static int TUNGSTENINGOT_ID;
+	
+	public final static int NICKELINGOT_ID_DEFAULT = 4095;
+	public static int NICKELINGOT_ID;
 	
 }

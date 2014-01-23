@@ -114,7 +114,7 @@ public class ConfigurationHandler {
 			ItemIds.ERIDIAN_ID = config.getItem(Strings.ERIDIAN_NAME,
 					ItemIds.ERIDIAN_ID_DEFAULT).getInt(
 					ItemIds.ERIDIAN_ID_DEFAULT);
-			
+					
 			ItemIds.HEADRON_ID = config.getItem(Strings.HEADRON_NAME,
 					ItemIds.HEADRON_ID_DEFAULT).getInt(
 					ItemIds.HEADRON_ID_DEFAULT);
@@ -126,6 +126,14 @@ public class ConfigurationHandler {
 			ItemIds.SILVERINGOT_ID = config.getItem(Strings.SILVERINGOT_NAME,
 					ItemIds.SILVERINGOT_ID_DEFAULT).getInt(
 					ItemIds.SILVERINGOT_ID_DEFAULT);
+			
+			ItemIds.TUNGSTENINGOT_ID = config.getItem(Strings.TUGNSTENINGOT_NAME,
+					ItemIds.TUNGSTENINGOT_ID_DEFAULT).getInt(
+					ItemIds.TUNGSTENINGOT_ID_DEFAULT);
+			
+			ItemIds.NICKELINGOT_ID = config.getItem(Strings.NICKELINGOT_NAME,
+					ItemIds.NICKELINGOT_ID_DEFAULT).getInt(
+					ItemIds.NICKELINGOT_ID_DEFAULT);
 					
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID
