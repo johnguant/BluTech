@@ -38,6 +38,8 @@ public class BluBlocks {
 	public static Block remboniteOre;
 	public static Block silverOre;
 	public static Block fossilOre;
+	public static Block nickelOre;
+	public static Block tungstenOre;
 
 	public static void init() {
 		bluOre = new BlockOre(BlockIds.BLUORE_ID)
@@ -111,6 +113,24 @@ public class BluBlocks {
 		GameRegistry.registerBlock(fossilOre, "fossilOre");
 		MinecraftForge.setBlockHarvestLevel(fossilOre, "pickaxe", 0);
 		//Not meant to be ore dictionaried.
+		
+		tungstenOre = new BlockOre(BlockIds.TUNGSTENORE_ID)
+				.setHardness(4.0f)
+				.setStepSound(Block.soundStoneFootstep)
+				.setUnlocalizedName("tungstenOre");
+		GameRegistry.registerBlock(tungstenOre, "tungstenOre");
+		MinecraftForge.setBlockHarvestLevel(tungstenOre, "pickaxe", 2);
+		OreDictionary.registerOre("oreTungsten", new ItemStack(tungstenOre));
+		
+		nickelOre = new BlockOre(BlockIds.NICKELORE_ID)
+				.setHardness(2.0f)
+				.setStepSound(Block.soundStoneFootstep)
+				.setUnlocalizedName("nickelOre");
+		GameRegistry.registerBlock(nickelOre, "nickelOre");
+		MinecraftForge.setBlockHarvestLevel(nickelOre, "pickaxe", 1);
+		OreDictionary.registerOre("oreNickel", new ItemStack(nickelOre));
+		
+		
 	}
 
 }

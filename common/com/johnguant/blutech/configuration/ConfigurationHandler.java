@@ -75,6 +75,14 @@ public class ConfigurationHandler {
 					BlockIds.FOSSILORE_ID_DEFAULT).getInt(
 					BlockIds.FOSSILORE_ID_DEFAULT);
 			
+			BlockIds.TUNGSTENORE_ID = config.getBlock(Strings.TUNGSTENORE_NAME,
+					BlockIds.TUNGSTENORE_ID_DEFAULT).getInt(
+					BlockIds.TUNGSTENORE_ID_DEFAULT);
+			
+			BlockIds.NICKELORE_ID = config.getBlock(Strings.NICKELORE_NAME,
+					BlockIds.NICKELORE_ID_DEFAULT).getInt(
+					BlockIds.NICKELORE_ID_DEFAULT);
+			
 			ItemIds.BLUDUST_ID = config.getItem(Strings.BLUDUST_NAME,
 					ItemIds.BLUDUST_ID_DEFAULT).getInt(
 					ItemIds.BLUDUST_ID_DEFAULT);

@@ -8,6 +8,8 @@ tile.rhodiumOre.name=Rhodium Ore
 tile.remboniteOre.name=Rembonite Ore
 tile.silverOre.name=Silver Ore
 tile.fossilOre.name=Fossil Ore
+tile.tungstenOre.name=Tungsten Ore
+tile.nickelOre.name=Nickel Ore
 itemGroup.blutech=BluTech
 
 #Item localizations

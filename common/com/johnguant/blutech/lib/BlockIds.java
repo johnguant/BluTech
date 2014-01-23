@@ -46,4 +46,10 @@ public class BlockIds {
 	public final static int FOSSILORE_ID_DEFAULT = 508;
 	public static int FOSSILORE_ID;
 	
+	public final static int TUNGSTENORE_ID_DEFAULT = 509;
+	public static int TUNGSTENORE_ID;
+	
+	public final static int NICKELORE_ID_DEFAULT = 510;
+	public static int NICKELORE_ID;
+	
 }

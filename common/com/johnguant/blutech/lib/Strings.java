@@ -59,6 +59,10 @@ public class Strings {
 	
 	public static final String FOSSILORE_NAME = "FossilOre";
 	
+	public static final String TUNGSTENORE_NAME = "Tungsten Ore";
+	
+	public static final String NICKELORE_NAME = "Nickel Ore";
+	
 	//Rhys, are the block strings used??
 	
 }
