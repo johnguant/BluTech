@@ -134,6 +134,10 @@ public class ConfigurationHandler {
 			ItemIds.NICKELINGOT_ID = config.getItem(Strings.NICKELINGOT_NAME,
 					ItemIds.NICKELINGOT_ID_DEFAULT).getInt(
 					ItemIds.NICKELINGOT_ID_DEFAULT);
+			
+			ItemIds.COCUSTABLET_ID = config.getItem(Strings.COCUSTABLET_NAME,
+					ItemIds.COCUSTABLET_ID_DEFAULT).getInt(
+					ItemIds.COCUSTABLET_ID_DEFAULT);
 					
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID

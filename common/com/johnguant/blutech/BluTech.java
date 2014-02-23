@@ -20,6 +20,7 @@ package com.johnguant.blutech;
 import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import com.johnguant.blutech.block.BluBlocks;
@@ -78,15 +79,31 @@ public class BluTech {
         ItemStack silverStack		= new ItemStack(BluItems.silverIngot, 1);
         ItemStack nickelStack		= new ItemStack(BluItems.nickelIngot,1);
         ItemStack tungstenStack		= new ItemStack(BluItems.tungstenIngot, 1);
+        ItemStack cocusStack		= new ItemStack(BluItems.cocusTablet, 1);
+        ItemStack beefStack			= new ItemStack(Item.beefRaw, 1);
+        ItemStack porkStack			= new ItemStack(Item.porkRaw, 1);
+        ItemStack potatoStack		= new ItemStack(Item.potato, 1);
+        ItemStack chickenStack		= new ItemStack(Item.chickenRaw, 1);
+        ItemStack fishStack			= new ItemStack(Item.fishRaw, 1);
+        ItemStack cookedCStack		= new ItemStack(Item.chickenCooked, 1);
+        ItemStack cookedPStack		= new ItemStack(Item.porkCooked, 1);
+        ItemStack cookedBStack		= new ItemStack(Item.beefCooked, 1);
+        ItemStack bakedStack		= new ItemStack(Item.bakedPotato, 1);
+        ItemStack cookedFStack		= new ItemStack(Item.fishCooked, 1);
         
 		
+        //Example Shaped:
 		//Example Shapeless:	GameRegistry.addShapelessRecipe(diamondsStack, dirtStack);
 		//Example Smelting:  	GameRegistry.addSmelting(Block.dirt.blockID, diamondsStack, 0.7f);
-        //Example Shaped:
-        
+                
         //Shaped Recipes:
         
         //Shapeless Recipes:
+        GameRegistry.addShapelessRecipe(bakedStack, potatoStack, cocusStack);		//Potato Cooking
+        GameRegistry.addShapelessRecipe(cookedCStack, chickenStack, cocusStack);	//Chicken Cooking
+        GameRegistry.addShapelessRecipe(cookedBStack, beefStack, cocusStack);		//Beef Cooking
+        GameRegistry.addShapelessRecipe(cookedPStack, porkStack, cocusStack);		//Pork Cooking
+        GameRegistry.addShapelessRecipe(cookedFStack, fishStack, cocusStack);		//Fish Cooking
         
         //Smelting Recipes:
 		GameRegistry.addSmelting(BluBlocks.aluminiumOre.blockID, aluminiumStack, 0.7f);

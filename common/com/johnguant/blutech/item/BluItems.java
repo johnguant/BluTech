@@ -41,6 +41,7 @@ public class BluItems {
 	public static Item silverIngot;
 	public static Item tungstenIngot;
 	public static Item nickelIngot;
+	public static Item cocusTablet;
 
 	public static void init() {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
@@ -106,6 +107,10 @@ public class BluItems {
 				.setUnlocalizedName("nickelIngot");
 		GameRegistry.registerItem(nickelIngot, Strings.NICKELINGOT_NAME);
 		OreDictionary.registerOre("ingotNickel", new ItemStack(nickelIngot));
+		
+		cocusTablet = new ItemTablet(ItemIds.COCUSTABLET_ID)
+				.setUnlocalizedName("cocusTablet");
+		GameRegistry.registerItem(cocusTablet, Strings.COCUSTABLET_NAME);
 						
 	}
 

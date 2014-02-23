@@ -19,6 +19,9 @@ package com.johnguant.blutech.lib;
 
 public class ItemIds {
 
+	public final static int COCUSTABLET_ID_DEFAULT = 4082;
+	public static int COCUSTABLET_ID;
+	
 	public final static int BLUDUST_ID_DEFAULT = 4083;
 	public static int BLUDUST_ID;
 
