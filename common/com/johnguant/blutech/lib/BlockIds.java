@@ -52,4 +52,12 @@ public class BlockIds {
 	public final static int NICKELORE_ID_DEFAULT = 510;
 	public static int NICKELORE_ID;
 	
+	public final static int MACHINEBLOCK1_ID_DEFAULT = 511;
+	public static int MACHINEBLOCK1_ID;
+	
+	public final static int MACHINEBLOCK2_ID_DEFAULT = 512;
+	public static int MACHINEBLOCK2_ID;
+	
+	public final static int MACHINEBLOCK3_ID_DEFAULT = 513;
+	public static int MACHINEBLOCK3_ID;
 }

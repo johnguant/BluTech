@@ -40,6 +40,10 @@ public class BluBlocks {
 	public static Block fossilOre;
 	public static Block nickelOre;
 	public static Block tungstenOre;
+	
+	public static Block bluMachineBlock;
+	public static Block energisedMachineBlock;
+	public static Block eridianMachineBlock;
 
 	public static void init() {
 		bluOre = new BlockOre(BlockIds.BLUORE_ID)
@@ -130,6 +134,26 @@ public class BluBlocks {
 		MinecraftForge.setBlockHarvestLevel(nickelOre, "pickaxe", 1);
 		OreDictionary.registerOre("oreNickel", new ItemStack(nickelOre));
 		
+		bluMachineBlock = new Blocks(BlockIds.MACHINEBLOCK1_ID)
+				.setHardness(2.5f)
+				.setStepSound(Block.soundStoneFootstep)
+				.setUnlocalizedName("bluMachineBlock");
+		GameRegistry.registerBlock(bluMachineBlock, "bluMachineBlock");
+		MinecraftForge.setBlockHarvestLevel(bluMachineBlock, "pickaxe", 1);
+		
+		energisedMachineBlock = new Blocks(BlockIds.MACHINEBLOCK2_ID)
+				.setHardness(2.5f)
+				.setStepSound(Block.soundStoneFootstep)
+				.setUnlocalizedName("energisedMachineBlock");
+		GameRegistry.registerBlock(energisedMachineBlock, "energisedMachineBlock");
+		MinecraftForge.setBlockHarvestLevel(energisedMachineBlock, "pickaxe", 1);
+		
+		eridianMachineBlock = new Blocks(BlockIds.MACHINEBLOCK3_ID)
+				.setHardness(3.0f)
+				.setStepSound(Block.soundStoneFootstep)
+				.setUnlocalizedName("eridianMachineBlock");
+		GameRegistry.registerBlock(eridianMachineBlock, "eridianMachineBlock");
+		MinecraftForge.setBlockHarvestLevel(eridianMachineBlock, "pickaxe", 1);
 		
 	}
 

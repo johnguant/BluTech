@@ -81,7 +81,19 @@ public class ConfigurationHandler {
 			
 			BlockIds.NICKELORE_ID = config.getBlock(Strings.NICKELORE_NAME,
 					BlockIds.NICKELORE_ID_DEFAULT).getInt(
-					BlockIds.NICKELORE_ID_DEFAULT);
+					BlockIds.NICKELORE_ID_DEFAULT); 
+			
+			BlockIds.MACHINEBLOCK1_ID = config.getBlock(Strings.MACHINEBLOCK1_NAME,
+					BlockIds.MACHINEBLOCK1_ID_DEFAULT).getInt(
+					BlockIds.MACHINEBLOCK1_ID_DEFAULT);
+			
+			BlockIds.MACHINEBLOCK2_ID = config.getBlock(Strings.MACHINEBLOCK2_NAME,
+					BlockIds.MACHINEBLOCK2_ID_DEFAULT).getInt(
+					BlockIds.MACHINEBLOCK2_ID_DEFAULT);
+			
+			BlockIds.MACHINEBLOCK3_ID = config.getBlock(Strings.MACHINEBLOCK3_NAME,
+					BlockIds.MACHINEBLOCK3_ID_DEFAULT).getInt(
+					BlockIds.MACHINEBLOCK3_ID_DEFAULT);
 			
 			ItemIds.BLUDUST_ID = config.getItem(Strings.BLUDUST_NAME,
 					ItemIds.BLUDUST_ID_DEFAULT).getInt(
