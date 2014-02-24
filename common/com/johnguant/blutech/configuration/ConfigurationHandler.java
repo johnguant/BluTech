@@ -150,6 +150,38 @@ public class ConfigurationHandler {
 			ItemIds.COCUSTABLET_ID = config.getItem(Strings.COCUSTABLET_NAME,
 					ItemIds.COCUSTABLET_ID_DEFAULT).getInt(
 					ItemIds.COCUSTABLET_ID_DEFAULT);
+			
+			ItemIds.IRONBRICK_ID = config.getItem(Strings.IRONBRICK_NAME,
+					ItemIds.IRONBRICK_ID_DEFAULT).getInt(
+					ItemIds.IRONBRICK_ID_DEFAULT);
+			
+			ItemIds.GOLDBRICK_ID = config.getItem(Strings.GOLDBRICK_NAME,
+					ItemIds.GOLDBRICK_ID_DEFAULT).getInt(
+					ItemIds.GOLDBRICK_ID_DEFAULT);
+			
+			ItemIds.DIAMONDBRICK_ID = config.getItem(Strings.DIAMONDBRICK_NAME,
+					ItemIds.DIAMONDBCRICK_ID_DEFAULT).getInt(
+					ItemIds.DIAMONDBCRICK_ID_DEFAULT);
+			
+			ItemIds.REMBONITEBRICK_ID = config.getItem(Strings.REMBONITEBRICK_NAME,
+					ItemIds.REMBONITEBRICK_ID_DEFAULT).getInt(
+					ItemIds.REMBONITEBRICK_ID_DEFAULT);
+			
+			ItemIds.STONEBRICK_ID = config.getItem(Strings.STONEBRICK_NAME,
+					ItemIds.STONEBRICK_ID_DEFAULT).getInt(
+					ItemIds.STONEBRICK_ID_DEFAULT);
+			
+			ItemIds.IRONNUGGET_ID = config.getItem(Strings.IRONNUGGET_NAME,
+					ItemIds.IRONNUGGET_ID_DEFAULT).getInt(
+					ItemIds.IRONNUGGET_ID_DEFAULT);
+			
+			ItemIds.DIAMONDNUGGET_ID = config.getItem(Strings.DIAMONDNUGGET_NAME,
+					ItemIds.DIAMONDNUGGET_ID_DEFAULT).getInt(
+					ItemIds.DIAMONDNUGGET_ID_DEFAULT);
+			
+			ItemIds.REMBONITENUGGET_ID = config.getItem(Strings.REMBONITENUGGET_NAME,
+					ItemIds.REMBONITENUGGET_ID_DEFAULT).getInt(
+					ItemIds.REMBONITENUGGET_ID_DEFAULT);
 					
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID

@@ -18,6 +18,30 @@
 package com.johnguant.blutech.lib;
 
 public class ItemIds {
+	
+	public final static int IRONBRICK_ID_DEFAULT = 4074;
+	public static int IRONBRICK_ID;
+	
+	public final static int GOLDBRICK_ID_DEFAULT = 4075;
+	public static int GOLDBRICK_ID;
+	
+	public final static int DIAMONDBCRICK_ID_DEFAULT = 4076;
+	public static int DIAMONDBRICK_ID;
+	
+	public final static int REMBONITEBRICK_ID_DEFAULT = 4077;
+	public static int REMBONITEBRICK_ID;
+	
+	public final static int STONEBRICK_ID_DEFAULT = 4078;
+	public static int STONEBRICK_ID;
+	
+	public final static int IRONNUGGET_ID_DEFAULT = 4079;
+	public static int IRONNUGGET_ID;
+	
+	public final static int DIAMONDNUGGET_ID_DEFAULT = 4080;
+	public static int DIAMONDNUGGET_ID;
+	
+	public final static int REMBONITENUGGET_ID_DEFAULT = 4081;
+	public static int REMBONITENUGGET_ID;
 
 	public final static int COCUSTABLET_ID_DEFAULT = 4082;
 	public static int COCUSTABLET_ID;

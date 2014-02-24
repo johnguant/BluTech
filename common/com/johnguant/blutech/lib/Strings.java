@@ -49,6 +49,22 @@ public class Strings {
 	
 	public static final String NICKELINGOT_NAME = "NickelIngot";
 	
+	public static final String IRONBRICK_NAME = "Iron Brick";
+	
+	public static final String GOLDBRICK_NAME = "Gold Brick";
+	
+	public static final String DIAMONDBRICK_NAME = "Diamond Brick";
+	
+	public static final String REMBONITEBRICK_NAME = "Rembonite Brick";
+	
+	public static final String STONEBRICK_NAME = "Stone Brick";
+	
+	public static final String IRONNUGGET_NAME = "Iron Nugget";
+	
+	public static final String DIAMONDNUGGET_NAME = "Diamond Nugget";
+	
+	public static final String REMBONITENUGGET_NAME = "Rembonite Nugget";
+	
 	public static final String ALUMINIUMORE_NAME = "AluminiumOre";
 	
 	public static final String COPPERORE_NAME = "CopperOre";

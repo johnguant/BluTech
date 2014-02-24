@@ -42,6 +42,14 @@ public class BluItems {
 	public static Item tungstenIngot;
 	public static Item nickelIngot;
 	public static Item cocusTablet;
+	public static Item ironBrick;
+	public static Item goldBrick;
+	public static Item diamondBrick;
+	public static Item remboniteBrick;
+	public static Item stoneBrick;
+	public static Item ironNugget;
+	public static Item diamondNugget;
+	public static Item remboniteNugget;
 
 	public static void init() {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
@@ -111,7 +119,42 @@ public class BluItems {
 		cocusTablet = new ItemTablet(ItemIds.COCUSTABLET_ID)
 				.setUnlocalizedName("cocusTablet");
 		GameRegistry.registerItem(cocusTablet, Strings.COCUSTABLET_NAME);
-						
+		
+		ironBrick = new ItemIngot(ItemIds.IRONBRICK_ID)
+				.setUnlocalizedName("ironBrick");
+		GameRegistry.registerItem(ironBrick, Strings.IRONBRICK_NAME);
+		
+		goldBrick = new ItemIngot(ItemIds.GOLDBRICK_ID)
+			.setUnlocalizedName("goldBrick");
+		GameRegistry.registerItem(goldBrick, Strings.GOLDBRICK_NAME);
+		
+		diamondBrick = new ItemIngot(ItemIds.DIAMONDBRICK_ID)
+			.setUnlocalizedName("diamondBrick");
+		GameRegistry.registerItem(diamondBrick, Strings.DIAMONDBRICK_NAME);
+		
+		remboniteBrick = new ItemIngot(ItemIds.REMBONITEBRICK_ID)
+			.setUnlocalizedName("remboniteBrick");
+		GameRegistry.registerItem(remboniteBrick, Strings.REMBONITEBRICK_NAME);
+		
+		stoneBrick = new ItemIngot(ItemIds.STONEBRICK_ID)
+			.setUnlocalizedName("stoneBrick");
+		GameRegistry.registerItem(stoneBrick, Strings.STONEBRICK_NAME);
+			
+		ironNugget = new ItemIngot(ItemIds.IRONNUGGET_ID)
+			.setUnlocalizedName("ironNugget");
+		GameRegistry.registerItem(ironNugget, Strings.IRONNUGGET_NAME);
+		OreDictionary.registerOre("nuggetIron", new ItemStack(ironNugget));
+
+		diamondNugget = new ItemIngot(ItemIds.DIAMONDNUGGET_ID)
+			.setUnlocalizedName("diamondNugget");
+		GameRegistry.registerItem(diamondNugget, Strings.DIAMONDNUGGET_NAME);
+		OreDictionary.registerOre("nuggetDiamond", new ItemStack(diamondNugget));
+
+		remboniteNugget = new ItemIngot(ItemIds.REMBONITENUGGET_ID)
+			.setUnlocalizedName("remboniteNugget");
+		GameRegistry.registerItem(remboniteNugget, Strings.REMBONITENUGGET_NAME);
+		OreDictionary.registerOre("nuggetRembonite", new ItemStack(remboniteNugget));
+								
 	}
 
 	private static void setUnlocalizedName(String string) {
