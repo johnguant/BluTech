@@ -90,20 +90,23 @@ public class BluTech {
         ItemStack cookedBStack		= new ItemStack(Item.beefCooked, 1);
         ItemStack bakedStack		= new ItemStack(Item.bakedPotato, 1);
         ItemStack cookedFStack		= new ItemStack(Item.fishCooked, 1);
-        
+        ItemStack coalStack			= new ItemStack(Item.coal, 1);
+        		
+        		
 		
         //Example Shaped:
-		//Example Shapeless:	GameRegistry.addShapelessRecipe(diamondsStack, dirtStack);
-		//Example Smelting:  	GameRegistry.addSmelting(Block.dirt.blockID, diamondsStack, 0.7f);
+		//Example Shapeless:	GameRegistry.addShapelessRecipe(diamondsStack, dirtStack); Makes diamonds from dirt
+		//Example Smelting:  	GameRegistry.addSmelting(Block.dirt.blockID, diamondsStack, 0.7f); Smelts diamonds to dirt
                 
         //Shaped Recipes:
         
         //Shapeless Recipes:
-        GameRegistry.addShapelessRecipe(bakedStack, potatoStack, cocusStack);		//Potato Cooking
-        GameRegistry.addShapelessRecipe(cookedCStack, chickenStack, cocusStack);	//Chicken Cooking
-        GameRegistry.addShapelessRecipe(cookedBStack, beefStack, cocusStack);		//Beef Cooking
-        GameRegistry.addShapelessRecipe(cookedPStack, porkStack, cocusStack);		//Pork Cooking
-        GameRegistry.addShapelessRecipe(cookedFStack, fishStack, cocusStack);		//Fish Cooking
+        GameRegistry.addShapelessRecipe(bakedStack, potatoStack, cocusStack);		//Potato Cooking WIP
+        GameRegistry.addShapelessRecipe(cookedCStack, chickenStack, cocusStack);	//Chicken Cooking WIP
+        GameRegistry.addShapelessRecipe(cookedBStack, beefStack, cocusStack);		//Beef Cooking WIP
+        GameRegistry.addShapelessRecipe(cookedPStack, porkStack, cocusStack);		//Pork Cooking WIP
+        GameRegistry.addShapelessRecipe(cookedFStack, fishStack, cocusStack);		//Fish Cooking WIP
+        GameRegistry.addShapelessRecipe(cocusStack, coalStack, cocusStack);			//Cocus Tablet Refueling. WIP.
         
         //Smelting Recipes:
 		GameRegistry.addSmelting(BluBlocks.aluminiumOre.blockID, aluminiumStack, 0.7f);
