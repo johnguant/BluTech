@@ -2,7 +2,7 @@
 {
   "modid": "blutech",
   "name": "BluTech",
-  "description": "Cool tech mod (better description coming soon",
+  "description": "Cool tech mod (better description coming soon)",
   "version": "@VERSION@",
   "url": "https://github.com/johnguant/BluTech",
   "updateUrl": "",
