@@ -7,7 +7,7 @@
 
 	<!-- Minecraft Forge -->
 	<property name="minecraftforge_src_archive" value="minecraftforge-src-${build.minecraft_version}-${build.forge_version}.zip" />
-	<property name="minecraftforge_src_archive_location" value="http://files.minecraftforge.net/minecraftforge/${minecraftforge_src_archive}" />
+	<property name="minecraftforge_src_archive_location" value="http://files.minecraftforge.net/maven/net/minecraftforge/forge/${build.minecraft_version}-${build.forge_version}/forge-${build.minecraft_version}-${build.forge_version}-src.zip" />
 
 	<target name="forge-clean">
 		<delete dir="${environment.base_location}/forge" />
