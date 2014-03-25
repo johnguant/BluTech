@@ -13,6 +13,8 @@ tile.nickelOre.name=Nickel Ore
 tile.bluMachineBlock.name=Blu Machine Block
 tile.energisedMachineBlock.name=Energised Machine Block
 tile.eridianMachineBlock.name=Eridian Machine Block
+tile.alloyFurnaceIdle.name=Alloy Furnace
+tile.alloyFurnaceActive.name=Alloy Furnace
 itemGroup.blutech=BluTech
 
 #Item localizations

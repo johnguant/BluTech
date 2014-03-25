@@ -95,6 +95,14 @@ public class ConfigurationHandler {
 					BlockIds.MACHINEBLOCK3_ID_DEFAULT).getInt(
 					BlockIds.MACHINEBLOCK3_ID_DEFAULT);
 			
+			BlockIds.FURNACEIDLE_ID = config.getBlock(Strings.FURNACEIDLE_NAME,
+					BlockIds.FURNACEIDLE_ID_DEFAULT).getInt(
+					BlockIds.FURNACEIDLE_ID_DEFAULT);
+			
+			BlockIds.FURNACEACTIVE_ID = config.getBlock(Strings.FURNACEACTIVE_NAME,
+					BlockIds.FURNACEACTIVE_ID_DEFAULT).getInt(
+					BlockIds.FURNACEACTIVE_ID_DEFAULT);
+			
 			ItemIds.BLUDUST_ID = config.getItem(Strings.BLUDUST_NAME,
 					ItemIds.BLUDUST_ID_DEFAULT).getInt(
 					ItemIds.BLUDUST_ID_DEFAULT);

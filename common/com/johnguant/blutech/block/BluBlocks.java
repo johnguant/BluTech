@@ -44,6 +44,9 @@ public class BluBlocks {
 	public static Block bluMachineBlock;
 	public static Block energisedMachineBlock;
 	public static Block eridianMachineBlock;
+	
+	public static Block alloyFurnaceIdle;
+	public static Block alloyFurnaceActive;
 
 	public static void init() {
 		bluOre = new BlockOre(BlockIds.BLUORE_ID)
@@ -154,6 +157,19 @@ public class BluBlocks {
 				.setUnlocalizedName("eridianMachineBlock");
 		GameRegistry.registerBlock(eridianMachineBlock, "eridianMachineBlock");
 		MinecraftForge.setBlockHarvestLevel(eridianMachineBlock, "pickaxe", 1);
+		
+		alloyFurnaceIdle = new BlockFurnace(BlockIds.FURNACEIDLE_ID)
+				.setHardness(1.5f)
+				.setStepSound(Block.soundAnvilFootstep)
+				.setUnlocalizedName("alloyFurnaceIdle");
+		GameRegistry.registerBlock(alloyFurnaceIdle, "alloyFurnaceIdle");
+		
+		alloyFurnaceActive = new BlockFurnace(BlockIds.FURNACEACTIVE_ID)
+				.setHardness(1.5f)
+				.setStepSound(Block.soundAnvilFootstep)
+				.setUnlocalizedName("alloyFurnaceActive");
+		GameRegistry.registerBlock(alloyFurnaceActive, "alloyFurnaceActive");
+		//TODO Add a light value equal to that of GlowStone.
 		
 	}
 

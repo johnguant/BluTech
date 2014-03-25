@@ -60,4 +60,10 @@ public class BlockIds {
 	
 	public final static int MACHINEBLOCK3_ID_DEFAULT = 513;
 	public static int MACHINEBLOCK3_ID;
+	
+	public final static int FURNACEIDLE_ID_DEFAULT = 514;
+	public static int FURNACEIDLE_ID;
+	
+	public final static int FURNACEACTIVE_ID_DEFAULT = 515;
+	public static int FURNACEACTIVE_ID;
 }
