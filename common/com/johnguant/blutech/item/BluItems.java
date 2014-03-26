@@ -50,6 +50,9 @@ public class BluItems {
 	public static Item ironNugget;
 	public static Item diamondNugget;
 	public static Item remboniteNugget;
+	public static Item bluAlloyBlend;
+	public static Item eridianBlend;
+	public static Item energizedBlend;
 
 	public static void init() {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
@@ -154,7 +157,22 @@ public class BluItems {
 			.setUnlocalizedName("remboniteNugget");
 		GameRegistry.registerItem(remboniteNugget, Strings.REMBONITENUGGET_NAME);
 		OreDictionary.registerOre("nuggetRembonite", new ItemStack(remboniteNugget));
-								
+		
+		bluAlloyBlend = new ItemDust(ItemIds.BLUALLOYBLEND_ID)
+			.setUnlocalizedName("bluAlloyBlend");
+		GameRegistry.registerItem(bluAlloyBlend, Strings.BLUALLOYBLEND_NAME);
+		OreDictionary.registerOre("blendBluAlloy", new ItemStack(bluAlloyBlend));
+		
+		eridianBlend = new ItemDust(ItemIds.ERIDIANBLEND_ID)
+			.setUnlocalizedName("eridianBlend");
+		GameRegistry.registerItem(eridianBlend, Strings.ERIDIANBLEND_NAME);
+		OreDictionary.registerOre("blendEridian", new ItemStack(eridianBlend));
+		
+		energizedBlend = new ItemDust(ItemIds.ENERGIZEDBLEND_ID)
+			.setUnlocalizedName("energizedBlend");
+		GameRegistry.registerItem(energizedBlend, Strings.ENERGIZEDBLEND_NAME);
+		OreDictionary.registerOre("blendEnergized", new ItemStack(energizedBlend));
+	
 	}
 
 	private static void setUnlocalizedName(String string) {

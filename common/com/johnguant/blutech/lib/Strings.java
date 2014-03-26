@@ -42,6 +42,9 @@ public class Strings {
 	public static final String IRONNUGGET_NAME = "Iron Nugget";
 	public static final String DIAMONDNUGGET_NAME = "Diamond Nugget";
 	public static final String REMBONITENUGGET_NAME = "Rembonite Nugget";
+	public static final String BLUALLOYBLEND_NAME = "Blu Alloy Blend";
+	public static final String ERIDIANBLEND_NAME = "Eridian Blend";
+	public static final String ENERGIZEDBLEND_NAME = "Energized Blend";
 
 	public static final String ALUMINIUMORE_NAME = "AluminiumOre";
 	public static final String COPPERORE_NAME = "CopperOre";

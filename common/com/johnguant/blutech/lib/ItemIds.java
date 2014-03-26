@@ -85,4 +85,13 @@ public class ItemIds {
 	public final static int NICKELINGOT_ID_DEFAULT = 4095;
 	public static int NICKELINGOT_ID;
 	
+	public final static int BLUALLOYBLEND_ID_DEFAULT = 4096;
+	public static int BLUALLOYBLEND_ID;
+	
+	public final static int ERIDIANBLEND_ID_DEFAULT = 4070;
+	public static int ERIDIANBLEND_ID;
+	
+	public final static int ENERGIZEDBLEND_ID_DEFAULT = 4071;
+	public static int ENERGIZEDBLEND_ID;
+	
 }

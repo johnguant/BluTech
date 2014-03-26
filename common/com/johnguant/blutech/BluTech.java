@@ -19,6 +19,7 @@ package com.johnguant.blutech;
 
 import java.io.File;
 
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -91,6 +92,16 @@ public class BluTech {
         ItemStack bakedStack		= new ItemStack(Item.bakedPotato, 1);
         ItemStack cookedFStack		= new ItemStack(Item.fishCooked, 1);
         ItemStack coalStack			= new ItemStack(Item.coal, 1);
+        ItemStack eridianStack 		= new ItemStack(BluItems.eridian, 1);
+        ItemStack blualloyStack		= new ItemStack(BluItems.bluAlloyIngot, 1);
+        ItemStack remboniteStack	= new ItemStack(BluItems.rembonite, 1);
+        ItemStack diamondStack		= new ItemStack(Item.diamond, 1);
+        ItemStack ironStack			= new ItemStack(Item.ingotIron, 1);
+        ItemStack stoneStack		= new ItemStack(Block.stone, 1);
+        ItemStack stoneBrickStack	= new ItemStack(BluItems.stoneBrick, 1);
+        ItemStack nuggetIStack		= new ItemStack(BluItems.ironNugget, 1);
+        ItemStack nuggetDStack		= new ItemStack(BluItems.diamondNugget, 1);
+        ItemStack nuggetRStack		= new ItemStack(BluItems.remboniteNugget, 1);
         		
         		
 		
@@ -101,21 +112,25 @@ public class BluTech {
         //Shaped Recipes:
         
         //Shapeless Recipes:
-        GameRegistry.addShapelessRecipe(bakedStack, potatoStack, cocusStack);		//Potato Cooking WIP
-        GameRegistry.addShapelessRecipe(cookedCStack, chickenStack, cocusStack);	//Chicken Cooking WIP
-        GameRegistry.addShapelessRecipe(cookedBStack, beefStack, cocusStack);		//Beef Cooking WIP
-        GameRegistry.addShapelessRecipe(cookedPStack, porkStack, cocusStack);		//Pork Cooking WIP
-        GameRegistry.addShapelessRecipe(cookedFStack, fishStack, cocusStack);		//Fish Cooking WIP
-        GameRegistry.addShapelessRecipe(cocusStack, coalStack, cocusStack);			//Cocus Tablet Refueling. WIP.
+        GameRegistry.addShapelessRecipe(bakedStack, potatoStack, cocusStack);				//Potato Cooking WIP
+        GameRegistry.addShapelessRecipe(cookedCStack, chickenStack, cocusStack);			//Chicken Cooking WIP
+        GameRegistry.addShapelessRecipe(cookedBStack, beefStack, cocusStack);				//Beef Cooking WIP
+        GameRegistry.addShapelessRecipe(cookedPStack, porkStack, cocusStack);				//Pork Cooking WIP
+        GameRegistry.addShapelessRecipe(cookedFStack, fishStack, cocusStack);				//Fish Cooking WIP
+        GameRegistry.addShapelessRecipe(cocusStack, coalStack, cocusStack);					//Cocus Tablet Refueling. WIP.
+        GameRegistry.addShapelessRecipe(stoneBrickStack, stoneStack, stoneStack);			//Crafting for stone brick. TODO Make it a shaped recipe
+        GameRegistry.addShapelessRecipe(nuggetIStack, ironStack);							//Iron Nuggets
+        GameRegistry.addShapelessRecipe(nuggetRStack, remboniteStack);						//Rembonite Nuggets
+        GameRegistry.addShapelessRecipe(nuggetDStack, diamondStack);						//Diamond Nuggets
         
         //Smelting Recipes:
-		GameRegistry.addSmelting(BluBlocks.aluminiumOre.blockID, aluminiumStack, 0.7f);
-		GameRegistry.addSmelting(BluBlocks.copperOre.blockID, copperStack, 0.5f);
-		GameRegistry.addSmelting(BluBlocks.tinOre.blockID, tinStack, 0.5f);
-		GameRegistry.addSmelting(BluBlocks.leadOre.blockID, leadStack, 0.7f);	
-		GameRegistry.addSmelting(BluBlocks.silverOre.blockID, silverStack, 1.0f);
-		GameRegistry.addSmelting(BluBlocks.nickelOre.blockID, nickelStack, 0.5f);
-		GameRegistry.addSmelting(BluBlocks.tungstenOre.blockID, tungstenStack, 1.0f);
+		GameRegistry.addSmelting(BluBlocks.aluminiumOre.blockID, aluminiumStack, 0.7f);		//Aluminium Smelting
+		GameRegistry.addSmelting(BluBlocks.copperOre.blockID, copperStack, 0.5f);			//Copper Smelting
+		GameRegistry.addSmelting(BluBlocks.tinOre.blockID, tinStack, 0.5f);					//Tin Smelting
+		GameRegistry.addSmelting(BluBlocks.leadOre.blockID, leadStack, 0.7f);				//Lead Smelting
+		GameRegistry.addSmelting(BluBlocks.silverOre.blockID, silverStack, 1.0f);			//Silver Smelting
+		GameRegistry.addSmelting(BluBlocks.nickelOre.blockID, nickelStack, 0.5f);			//Nickel Smelting
+		GameRegistry.addSmelting(BluBlocks.tungstenOre.blockID, tungstenStack, 1.0f);		//Tungsten Smelting
 		
 	}
 

@@ -190,6 +190,18 @@ public class ConfigurationHandler {
 			ItemIds.REMBONITENUGGET_ID = config.getItem(Strings.REMBONITENUGGET_NAME,
 					ItemIds.REMBONITENUGGET_ID_DEFAULT).getInt(
 					ItemIds.REMBONITENUGGET_ID_DEFAULT);
+			
+			ItemIds.BLUALLOYBLEND_ID = config.getItem(Strings.BLUALLOYBLEND_NAME,
+					ItemIds.BLUALLOYBLEND_ID_DEFAULT).getInt(
+					ItemIds.BLUALLOYBLEND_ID_DEFAULT);
+			
+			ItemIds.ERIDIANBLEND_ID = config.getItem(Strings.ERIDIANBLEND_NAME,
+					ItemIds.ERIDIANBLEND_ID_DEFAULT).getInt(
+					ItemIds.ERIDIANBLEND_ID_DEFAULT);
+			
+			ItemIds.ENERGIZEDBLEND_ID = config.getItem(Strings.ENERGIZEDBLEND_NAME,
+					ItemIds.ENERGIZEDBLEND_ID_DEFAULT).getInt(
+					ItemIds.ENERGIZEDBLEND_ID_DEFAULT);
 					
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID
