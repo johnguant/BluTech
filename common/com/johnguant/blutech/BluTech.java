@@ -102,6 +102,9 @@ public class BluTech {
         ItemStack nuggetIStack		= new ItemStack(BluItems.ironNugget, 1);
         ItemStack nuggetDStack		= new ItemStack(BluItems.diamondNugget, 1);
         ItemStack nuggetRStack		= new ItemStack(BluItems.remboniteNugget, 1);
+        ItemStack bluAlloyStack		= new ItemStack(BluItems.bluAlloyIngot, 1);
+        ItemStack energizedStack	= new ItemStack(BluItems.energizedIngot, 1);
+        
         		
         		
 		
@@ -131,6 +134,11 @@ public class BluTech {
 		GameRegistry.addSmelting(BluBlocks.silverOre.blockID, silverStack, 1.0f);			//Silver Smelting
 		GameRegistry.addSmelting(BluBlocks.nickelOre.blockID, nickelStack, 0.5f);			//Nickel Smelting
 		GameRegistry.addSmelting(BluBlocks.tungstenOre.blockID, tungstenStack, 1.0f);		//Tungsten Smelting
+		GameRegistry.addSmelting(BluItems.eridianBlend.itemID, eridianStack, 1.0f);			//Eridian Creation
+		GameRegistry.addSmelting(BluItems.bluAlloyBlend.itemID, blualloyStack, 0.3f);		//Blu Alloy Ingot Creation
+		GameRegistry.addSmelting(BluItems.energizedBlend.itemID, energizedStack, 0.3f);		//Energized Ingot Creation
+		
+		
 		
 	}
 

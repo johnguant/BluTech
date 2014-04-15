@@ -34,8 +34,8 @@ public class OreGen implements IWorldGenerator {
 			IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
 
 		switch (world.provider.dimensionId) {
-		case -1:
-			generateNether(world, random, chunkX * 16, chunkZ * 16);
+		//case -1:
+			//generateNether(world, random, chunkX * 16, chunkZ * 16);
 		case 0:
 			generateOverworld(world, random, chunkX * 16, chunkZ * 16);
 		case 1:
@@ -67,12 +67,14 @@ public class OreGen implements IWorldGenerator {
 				2 + random.nextInt(3), 5, 5, 25);
 		this.addOreSpawn(BluBlocks.fossilOre, world, random, x, z, 16, 16, 
 				8 + random.nextInt(3), 5, 30, 60);
+		this.addOreSpawn(BluBlocks.abyssStone, world, random, x, z, 64, 64,
+				20 + random.nextInt(20), 1, 0, 10);//This is a test
 		
 	}
 
-	private void generateNether(World world, Random random, int x, int z) {
-
-	}
+	//private void generateNether(World world, 64){
+		
+	//}
 
 	private void generateEnd(World world, Random random, int x, int z) {
 

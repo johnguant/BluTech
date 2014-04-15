@@ -15,6 +15,10 @@ tile.energisedMachineBlock.name=Energised Machine Block
 tile.eridianMachineBlock.name=Eridian Machine Block
 tile.alloyFurnaceIdle.name=Alloy Furnace
 tile.alloyFurnaceActive.name=Alloy Furnace
+tile.abyssStone.name=Abyss Stone
+tile.bluWood.name=Blu Wood
+tile.bluPlanks.name=Blu Planks
+tile.bluLeaves.name=Blu Leaves
 itemGroup.blutech=BluTech
 
 #Item localizations
@@ -40,3 +44,7 @@ item.stoneBrick.name=Stone Brick
 item.ironNugget.name=Iron Nugget
 item.diamondNugget.name=Diamond Nugget
 item.remboniteNugget.name=Rembonite Nugget
+item.energizedIngot.name=Energized Ingot
+item.bluAlloyBlend.name=Blu Alloy Blend
+item.energizedBlend.name=Energized Blend
+item.eridianBlend.name=Eridian Blend

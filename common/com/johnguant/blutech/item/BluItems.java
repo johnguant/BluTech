@@ -53,6 +53,7 @@ public class BluItems {
 	public static Item bluAlloyBlend;
 	public static Item eridianBlend;
 	public static Item energizedBlend;
+	public static Item energizedIngot;
 
 	public static void init() {
 		bluDust = new ItemDust(ItemIds.BLUDUST_ID);
@@ -172,6 +173,11 @@ public class BluItems {
 			.setUnlocalizedName("energizedBlend");
 		GameRegistry.registerItem(energizedBlend, Strings.ENERGIZEDBLEND_NAME);
 		OreDictionary.registerOre("blendEnergized", new ItemStack(energizedBlend));
+		
+		energizedIngot = new ItemIngot(ItemIds.ENERGIZEDINGOT_ID)
+			.setUnlocalizedName("energizedIngot");
+		GameRegistry.registerItem(energizedIngot, Strings.ENERGIZEDINGOT_NAME);
+		OreDictionary.registerOre("ingotEnergized", new ItemStack(energizedIngot));
 	
 	}
 

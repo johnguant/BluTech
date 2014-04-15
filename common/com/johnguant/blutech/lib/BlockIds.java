@@ -66,4 +66,16 @@ public class BlockIds {
 	
 	public final static int FURNACEACTIVE_ID_DEFAULT = 515;
 	public static int FURNACEACTIVE_ID;
+	
+	public final static int ABYSSSTONE_ID_DEFAULT = 516;
+	public static int ABYSSSTONE_ID;
+	
+	public final static int BLUWOOD_ID_DEFAULT = 516;
+	public static int BLUWOOD_ID;
+	
+	public final static int BLUPLANKS_ID_DEFAULT = 517;
+	public static int BLUPLANKS_ID;
+	
+	public final static int BLULEAVES_ID_DEFAULT = 518;
+	public static int BLULEAVES_ID;
 }

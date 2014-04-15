@@ -40,6 +40,10 @@ public class BluBlocks {
 	public static Block fossilOre;
 	public static Block nickelOre;
 	public static Block tungstenOre;
+	public static Block abyssStone;
+	public static Block bluWood;
+	public static Block bluPlanks;
+	public static Block bluLeaves;
 	
 	public static Block bluMachineBlock;
 	public static Block energisedMachineBlock;
@@ -119,8 +123,7 @@ public class BluBlocks {
 				.setUnlocalizedName("fossilOre");
 		GameRegistry.registerBlock(fossilOre, "fossilOre");
 		MinecraftForge.setBlockHarvestLevel(fossilOre, "pickaxe", 0);
-		//Not meant to be ore dictionaried.
-		
+				
 		tungstenOre = new BlockOre(BlockIds.TUNGSTENORE_ID)
 				.setHardness(4.0f)
 				.setStepSound(Block.soundStoneFootstep)
@@ -143,12 +146,14 @@ public class BluBlocks {
 				.setUnlocalizedName("bluMachineBlock");
 		GameRegistry.registerBlock(bluMachineBlock, "bluMachineBlock");
 		MinecraftForge.setBlockHarvestLevel(bluMachineBlock, "pickaxe", 1);
+		MinecraftForge.setBlockHarvestLevel(bluMachineBlock, "pickaxe", 1);
 		
 		energisedMachineBlock = new Blocks(BlockIds.MACHINEBLOCK2_ID)
 				.setHardness(2.5f)
 				.setStepSound(Block.soundStoneFootstep)
 				.setUnlocalizedName("energisedMachineBlock");
 		GameRegistry.registerBlock(energisedMachineBlock, "energisedMachineBlock");
+		MinecraftForge.setBlockHarvestLevel(energisedMachineBlock, "pickaxe", 1);
 		MinecraftForge.setBlockHarvestLevel(energisedMachineBlock, "pickaxe", 1);
 		
 		eridianMachineBlock = new Blocks(BlockIds.MACHINEBLOCK3_ID)
@@ -157,19 +162,50 @@ public class BluBlocks {
 				.setUnlocalizedName("eridianMachineBlock");
 		GameRegistry.registerBlock(eridianMachineBlock, "eridianMachineBlock");
 		MinecraftForge.setBlockHarvestLevel(eridianMachineBlock, "pickaxe", 1);
+		MinecraftForge.setBlockHarvestLevel(eridianMachineBlock, "pickaxe", 1);
 		
 		alloyFurnaceIdle = new BlockFurnace(BlockIds.FURNACEIDLE_ID)
 				.setHardness(1.5f)
 				.setStepSound(Block.soundAnvilFootstep)
 				.setUnlocalizedName("alloyFurnaceIdle");
 		GameRegistry.registerBlock(alloyFurnaceIdle, "alloyFurnaceIdle");
+		MinecraftForge.setBlockHarvestLevel(alloyFurnaceIdle, "pickaxe", 1);
 		
 		alloyFurnaceActive = new BlockFurnace(BlockIds.FURNACEACTIVE_ID)
 				.setHardness(1.5f)
 				.setStepSound(Block.soundAnvilFootstep)
 				.setUnlocalizedName("alloyFurnaceActive");
 		GameRegistry.registerBlock(alloyFurnaceActive, "alloyFurnaceActive");
+		MinecraftForge.setBlockHarvestLevel(alloyFurnaceActive, "pickaxe", 1);
 		//TODO Add a light value equal to that of GlowStone.
+		
+		abyssStone = new Blocks(BlockIds.ABYSSSTONE_ID)
+				.setHardness(51.0f)
+				.setStepSound(Block.soundPowderFootstep)
+				.setUnlocalizedName("abyssStone");
+		GameRegistry.registerBlock(abyssStone, "abyssStone");
+		MinecraftForge.setBlockHarvestLevel(abyssStone, "pickaxe", 3);
+		
+		bluWood = new BlockTree(BlockIds.BLUWOOD_ID)
+				.setHardness(1.0f)
+				.setStepSound(Block.soundWoodFootstep)
+				.setUnlocalizedName("bluWood");
+		GameRegistry.registerBlock(bluWood, "bluWood");
+		MinecraftForge.setBlockHarvestLevel(bluWood, "axe", 0);
+		
+		bluPlanks = new BlockTree(BlockIds.BLUPLANKS_ID)
+				.setHardness(1.0f)
+				.setStepSound(Block.soundWoodFootstep)
+				.setUnlocalizedName("bluPlanks");
+		GameRegistry.registerBlock(bluPlanks, "bluPlanks");
+		MinecraftForge.setBlockHarvestLevel(bluPlanks, "axe", 0);
+		
+		bluLeaves = new BlockTree(BlockIds.BLULEAVES_ID)
+				.setHardness(0.5f)
+				.setStepSound(Block.soundGrassFootstep)
+				.setUnlocalizedName("bluLeaves");
+		GameRegistry.registerBlock(bluLeaves, "bluLeaves");
+		MinecraftForge.setBlockHarvestLevel(bluLeaves, "axe", 0);
 		
 	}
 

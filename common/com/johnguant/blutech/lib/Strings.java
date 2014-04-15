@@ -45,6 +45,7 @@ public class Strings {
 	public static final String BLUALLOYBLEND_NAME = "Blu Alloy Blend";
 	public static final String ERIDIANBLEND_NAME = "Eridian Blend";
 	public static final String ENERGIZEDBLEND_NAME = "Energized Blend";
+	public static final String ENERGIZEDINGOT_NAME = "Energized Ingot";
 
 	public static final String ALUMINIUMORE_NAME = "AluminiumOre";
 	public static final String COPPERORE_NAME = "CopperOre";
@@ -61,6 +62,10 @@ public class Strings {
 	public static final String MACHINEBLOCK3_NAME = "EridianMachineBlock";
 	public static final String FURNACEIDLE_NAME = "AlloyFurnaceIdle";
 	public static final String FURNACEACTIVE_NAME = "AlloyFurnaceActive";
+	public static final String ABYSSSTONE_NAME = "AbyssStone";
+	public static final String BLUWOOD_NAME = "BluWood";
+	public static final String BLULEAVES_NAME = "BluLeaves";
+	public static final String BLUPLANKS_NAME = "BluPlanks";
 	
 	public static final String TILEENTITY_STATE = "TileEntityState";
     public static final String TILEENTITY_CUSTOMNAME = "TileEntityCustomName";

@@ -103,6 +103,22 @@ public class ConfigurationHandler {
 					BlockIds.FURNACEACTIVE_ID_DEFAULT).getInt(
 					BlockIds.FURNACEACTIVE_ID_DEFAULT);
 			
+			BlockIds.ABYSSSTONE_ID = config.getBlock(Strings.ABYSSSTONE_NAME,
+					BlockIds.ABYSSSTONE_ID_DEFAULT).getInt(
+					BlockIds.ABYSSSTONE_ID_DEFAULT);
+			
+			BlockIds.BLUWOOD_ID = config.getBlock(Strings.BLUWOOD_NAME,
+					BlockIds.BLUWOOD_ID_DEFAULT).getInt(
+					BlockIds.BLUWOOD_ID_DEFAULT);
+			
+			BlockIds.BLUPLANKS_ID = config.getBlock(Strings.BLUPLANKS_NAME,
+					BlockIds.BLUPLANKS_ID_DEFAULT).getInt(
+					BlockIds.BLUPLANKS_ID_DEFAULT);
+			
+			BlockIds.BLULEAVES_ID = config.getBlock(Strings.BLULEAVES_NAME,
+					BlockIds.BLULEAVES_ID_DEFAULT).getInt(
+					BlockIds.BLULEAVES_ID_DEFAULT);
+			
 			ItemIds.BLUDUST_ID = config.getItem(Strings.BLUDUST_NAME,
 					ItemIds.BLUDUST_ID_DEFAULT).getInt(
 					ItemIds.BLUDUST_ID_DEFAULT);
@@ -202,6 +218,10 @@ public class ConfigurationHandler {
 			ItemIds.ENERGIZEDBLEND_ID = config.getItem(Strings.ENERGIZEDBLEND_NAME,
 					ItemIds.ENERGIZEDBLEND_ID_DEFAULT).getInt(
 					ItemIds.ENERGIZEDBLEND_ID_DEFAULT);
+			
+			ItemIds.ENERGIZEDINGOT_ID = config.getItem(Strings.ENERGIZEDINGOT_NAME,
+					ItemIds.ENERGIZEDINGOT_ID_DEFAULT).getInt(
+					ItemIds.ENERGIZEDINGOT_ID_DEFAULT);
 					
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID

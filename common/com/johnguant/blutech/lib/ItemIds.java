@@ -94,4 +94,7 @@ public class ItemIds {
 	public final static int ENERGIZEDBLEND_ID_DEFAULT = 4071;
 	public static int ENERGIZEDBLEND_ID;
 	
+	public final static int ENERGIZEDINGOT_ID_DEFAULT = 4072;
+	public static int ENERGIZEDINGOT_ID;
+	
 }
