@@ -37,7 +37,7 @@ public int idDropped(int par1, Random par2Random, int par3) {
  * Returns the quantity of items to drop on block destruction.
  */
 public int quantityDropped(Random par1Random) {
-	return this.blockID == BluBlocks.bluLeaves.blockID ? 0 + par1Random.nextInt(1) : this.blockID;
+	return this.blockID == BluBlocks.bluLeaves.blockID ? 1 + par1Random.nextInt(1) : this.blockID;
 }
 
 

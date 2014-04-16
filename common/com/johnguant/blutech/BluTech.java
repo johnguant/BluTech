@@ -23,6 +23,7 @@ import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.src.ModLoader;
 
 import com.johnguant.blutech.block.BluBlocks;
 import com.johnguant.blutech.configuration.ConfigurationHandler;
@@ -99,20 +100,38 @@ public class BluTech {
         ItemStack ironStack			= new ItemStack(Item.ingotIron, 1);
         ItemStack stoneStack		= new ItemStack(Block.stone, 1);
         ItemStack stoneBrickStack	= new ItemStack(BluItems.stoneBrick, 1);
-        ItemStack nuggetIStack		= new ItemStack(BluItems.ironNugget, 1);
-        ItemStack nuggetDStack		= new ItemStack(BluItems.diamondNugget, 1);
-        ItemStack nuggetRStack		= new ItemStack(BluItems.remboniteNugget, 1);
+        ItemStack nuggetIStack		= new ItemStack(BluItems.ironNugget, 9);
+        ItemStack nuggetDStack		= new ItemStack(BluItems.diamondNugget, 9);
+        ItemStack nuggetRStack		= new ItemStack(BluItems.remboniteNugget, 9);
         ItemStack bluAlloyStack		= new ItemStack(BluItems.bluAlloyIngot, 1);
         ItemStack energizedStack	= new ItemStack(BluItems.energizedIngot, 1);
+        ItemStack headronStack		= new ItemStack(BluItems.headron, 1);
         
         		
         		
 		
-        //Example Shaped:
+        //Example Shaped:		GameRegistry.addRecipe(diamondStack, new Object[] { "DDD", "DDD", "DDD", 'D', Block.dirt }); Makes a diamond from a grid full of dirt
+        //Example Complex:		GameRegistry.addRecipe(new ItemStack(Block.whiteStone, 64), new Object[] { "W $", " S ", "s E", 'W', new ItemStack(Block.wood, 1, 2),
+        								//'$', Item.stick, 'S', Block.sand, 's', Block.sapling, 'E', Item.enderPearl });
 		//Example Shapeless:	GameRegistry.addShapelessRecipe(diamondsStack, dirtStack); Makes diamonds from dirt
 		//Example Smelting:  	GameRegistry.addSmelting(Block.dirt.blockID, diamondsStack, 0.7f); Smelts diamonds to dirt
                 
         //Shaped Recipes:
+        
+        GameRegistry.addRecipe(diamondStack, new Object[] { "DDD", "DDD", "DDD", 'D', BluItems.diamondNugget});
+        GameRegistry.addRecipe(ironStack, new Object[] { "DDD", "DDD", "DDD", 'D', BluItems.ironNugget});
+        GameRegistry.addRecipe(remboniteStack, new Object[] { "DDD", "DDD", "DDD", 'D', BluItems.remboniteNugget});
+        GameRegistry.addRecipe(stoneBrickStack, new Object[] { "D", "D", 'D', Block.stone});
+                
+        //Complex Recipies:
+                
+        GameRegistry.addRecipe(cocusStack, new Object[] { "D D", " F ", "D D",
+        		'D', Item.ingotIron, 'F', Block.furnaceIdle});
+        
+        GameRegistry.addRecipe(headronStack, new Object[] { "GRG", "RBR", "GRG",
+        		'G', BluItems.bluDust, 'R', Item.redstone, 'B', Item.bucketWater});
+        
+        
         
         //Shapeless Recipes:
         GameRegistry.addShapelessRecipe(bakedStack, potatoStack, cocusStack);				//Potato Cooking WIP
@@ -121,7 +140,7 @@ public class BluTech {
         GameRegistry.addShapelessRecipe(cookedPStack, porkStack, cocusStack);				//Pork Cooking WIP
         GameRegistry.addShapelessRecipe(cookedFStack, fishStack, cocusStack);				//Fish Cooking WIP
         GameRegistry.addShapelessRecipe(cocusStack, coalStack, cocusStack);					//Cocus Tablet Refueling. WIP.
-        GameRegistry.addShapelessRecipe(stoneBrickStack, stoneStack, stoneStack);			//Crafting for stone brick. TODO Make it a shaped recipe
+        //GameRegistry.addShapelessRecipe(stoneBrickStack, stoneStack, stoneStack);			//Crafting for stone brick. TODO Make it a shaped recipe
         GameRegistry.addShapelessRecipe(nuggetIStack, ironStack);							//Iron Nuggets
         GameRegistry.addShapelessRecipe(nuggetRStack, remboniteStack);						//Rembonite Nuggets
         GameRegistry.addShapelessRecipe(nuggetDStack, diamondStack);						//Diamond Nuggets
