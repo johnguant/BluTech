@@ -203,6 +203,8 @@ public class BluBlocks {
 		bluLeaves = new BlockTree(BlockIds.BLULEAVES_ID)
 				.setHardness(0.5f)
 				.setStepSound(Block.soundGrassFootstep)
+				.setLightOpacity(1000)
+				.setLightValue(2.0f)
 				.setUnlocalizedName("bluLeaves");
 		GameRegistry.registerBlock(bluLeaves, "bluLeaves");
 		MinecraftForge.setBlockHarvestLevel(bluLeaves, "axe", 0);
