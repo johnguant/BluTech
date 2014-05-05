@@ -107,18 +107,6 @@ public class ConfigurationHandler {
 					BlockIds.ABYSSSTONE_ID_DEFAULT).getInt(
 					BlockIds.ABYSSSTONE_ID_DEFAULT);
 			
-			BlockIds.BLUWOOD_ID = config.getBlock(Strings.BLUWOOD_NAME,
-					BlockIds.BLUWOOD_ID_DEFAULT).getInt(
-					BlockIds.BLUWOOD_ID_DEFAULT);
-			
-			BlockIds.BLUPLANKS_ID = config.getBlock(Strings.BLUPLANKS_NAME,
-					BlockIds.BLUPLANKS_ID_DEFAULT).getInt(
-					BlockIds.BLUPLANKS_ID_DEFAULT);
-			
-			BlockIds.BLULEAVES_ID = config.getBlock(Strings.BLULEAVES_NAME,
-					BlockIds.BLULEAVES_ID_DEFAULT).getInt(
-					BlockIds.BLULEAVES_ID_DEFAULT);
-			
 			ItemIds.BLUDUST_ID = config.getItem(Strings.BLUDUST_NAME,
 					ItemIds.BLUDUST_ID_DEFAULT).getInt(
 					ItemIds.BLUDUST_ID_DEFAULT);
