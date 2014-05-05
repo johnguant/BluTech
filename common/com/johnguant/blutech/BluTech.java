@@ -121,7 +121,7 @@ public class BluTech {
         GameRegistry.addRecipe(diamondStack, new Object[] { "DDD", "DDD", "DDD", 'D', BluItems.diamondNugget});
         GameRegistry.addRecipe(ironStack, new Object[] { "DDD", "DDD", "DDD", 'D', BluItems.ironNugget});
         GameRegistry.addRecipe(remboniteStack, new Object[] { "DDD", "DDD", "DDD", 'D', BluItems.remboniteNugget});
-        GameRegistry.addRecipe(stoneBrickStack, new Object[] { "D", "D", 'D', Block.stone});
+        GameRegistry.addRecipe(stoneBrickStack, new Object[] { "D", 'D', Block.stoneBrick});
                 
         //Complex Recipies:
                 
@@ -140,7 +140,6 @@ public class BluTech {
         GameRegistry.addShapelessRecipe(cookedPStack, porkStack, cocusStack);				//Pork Cooking WIP
         GameRegistry.addShapelessRecipe(cookedFStack, fishStack, cocusStack);				//Fish Cooking WIP
         GameRegistry.addShapelessRecipe(cocusStack, coalStack, cocusStack);					//Cocus Tablet Refueling. WIP.
-        //GameRegistry.addShapelessRecipe(stoneBrickStack, stoneStack, stoneStack);			//Crafting for stone brick. TODO Make it a shaped recipe
         GameRegistry.addShapelessRecipe(nuggetIStack, ironStack);							//Iron Nuggets
         GameRegistry.addShapelessRecipe(nuggetRStack, remboniteStack);						//Rembonite Nuggets
         GameRegistry.addShapelessRecipe(nuggetDStack, diamondStack);						//Diamond Nuggets

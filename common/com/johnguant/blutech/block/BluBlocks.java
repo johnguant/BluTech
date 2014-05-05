@@ -174,6 +174,7 @@ public class BluBlocks {
 		alloyFurnaceActive = new BlockFurnace(BlockIds.FURNACEACTIVE_ID)
 				.setHardness(1.5f)
 				.setStepSound(Block.soundAnvilFootstep)
+				.setLightValue(2.0f)
 				.setUnlocalizedName("alloyFurnaceActive");
 		GameRegistry.registerBlock(alloyFurnaceActive, "alloyFurnaceActive");
 		MinecraftForge.setBlockHarvestLevel(alloyFurnaceActive, "pickaxe", 1);
@@ -185,29 +186,6 @@ public class BluBlocks {
 				.setUnlocalizedName("abyssStone");
 		GameRegistry.registerBlock(abyssStone, "abyssStone");
 		MinecraftForge.setBlockHarvestLevel(abyssStone, "pickaxe", 3);
-		
-		bluWood = new BlockTree(BlockIds.BLUWOOD_ID)
-				.setHardness(1.0f)
-				.setStepSound(Block.soundWoodFootstep)
-				.setUnlocalizedName("bluWood");
-		GameRegistry.registerBlock(bluWood, "bluWood");
-		MinecraftForge.setBlockHarvestLevel(bluWood, "axe", 0);
-		
-		bluPlanks = new BlockTree(BlockIds.BLUPLANKS_ID)
-				.setHardness(1.0f)
-				.setStepSound(Block.soundWoodFootstep)
-				.setUnlocalizedName("bluPlanks");
-		GameRegistry.registerBlock(bluPlanks, "bluPlanks");
-		MinecraftForge.setBlockHarvestLevel(bluPlanks, "axe", 0);
-		
-		bluLeaves = new BlockTree(BlockIds.BLULEAVES_ID)
-				.setHardness(0.5f)
-				.setStepSound(Block.soundGrassFootstep)
-				.setLightOpacity(1000)
-				.setLightValue(2.0f)
-				.setUnlocalizedName("bluLeaves");
-		GameRegistry.registerBlock(bluLeaves, "bluLeaves");
-		MinecraftForge.setBlockHarvestLevel(bluLeaves, "axe", 0);
 		
 	}
 
