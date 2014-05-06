@@ -47,51 +47,63 @@ public class OreGen implements IWorldGenerator {
 	private void generateOverworld(World world, Random random, int x, int z) {
 		if (ConfigurationHandler.bluOreGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.bluOre, world, random, x, z, 16, 16,
-				10 + random.nextInt(3), 5, 5, 30);}
+				10 + random.nextInt(3), 5, 5, 30);
+		}
 		
 		if (ConfigurationHandler.tinGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.tinOre, world, random, x, z, 16, 16,
-				8 + random.nextInt(3), 5, 15, 70);}
+				8 + random.nextInt(3), 5, 15, 70);
+		}
 		
 		if (ConfigurationHandler.copperGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.copperOre, world, random, x, z, 16, 16,
-				8 + random.nextInt(3), 5, 15, 70);}
+				8 + random.nextInt(3), 5, 15, 70);
+		}
 		
 		if (ConfigurationHandler.leadGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.leadOre, world, random, x, z, 16, 16,
-				7 + random.nextInt(3), 5, 15, 50);}
+				7 + random.nextInt(3), 5, 15, 50);
+		}
 		
 		if (ConfigurationHandler.aluminiumGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.aluminiumOre, world, random, x, z, 16, 16,
-				7 + random.nextInt(3), 5, 15, 60);}
+				7 + random.nextInt(3), 5, 15, 60);
+		}
 		
 		if (ConfigurationHandler.silverGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.silverOre, world, random, x, z, 16, 16,
-				5 + random.nextInt(3), 5, 15, 50);}
+				5 + random.nextInt(3), 5, 15, 50);
+		}
 		
 		if (ConfigurationHandler.rhodiumGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.rhodiumOre, world, random, x, z, 16, 16,
-				4 + random.nextInt(3), 5, 5, 16);}
+				4 + random.nextInt(3), 5, 5, 16);
+		}
 		
 		if (ConfigurationHandler.remboniteGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.remboniteOre, world, random, x, z, 16, 16,
-				6 + random.nextInt(3), 5, 5, 16);}
+				6 + random.nextInt(3), 5, 5, 16);
+		}
 		
 		if (ConfigurationHandler.nickelGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.nickelOre, world, random, x, z, 16, 16, 
-				7 + random.nextInt(3), 5, 15, 60);}
+				7 + random.nextInt(3), 5, 15, 60);
+		}
 		
 		if (ConfigurationHandler.tungstenGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.tungstenOre, world, random, x, z, 16, 16,
-				2 + random.nextInt(3), 5, 5, 25);}
+				2 + random.nextInt(3), 5, 5, 25);
+		}
 		
 		if (ConfigurationHandler.fossilOreGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.fossilOre, world, random, x, z, 16, 16, 
-				8 + random.nextInt(3), 5, 30, 60);}
+				8 + random.nextInt(3), 5, 30, 60);
+		}
 		
 		if (ConfigurationHandler.abyssStoneGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.abyssStone, world, random, x, z, 64, 64,
-				20 + random.nextInt(20), 1, 0, 10);}
+				20 + random.nextInt(20), 1, 0, 10);
+		}
 				
 	}
 

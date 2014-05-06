@@ -41,9 +41,9 @@ public class ConfigurationHandler {
 	public static boolean fossilOreGenerationEnabled = true;
 	public static boolean aluminiumGenerationEnabled = true;
 	public static boolean nickelGenerationEnabled = true;
-	public static boolean tungstenGenerationEnabled = true;
+	public static boolean tungstenGenerationEnabled = false;
 	public static boolean abyssStoneGenerationEnabled = true;
-	public static boolean remboniteGenerationEnabled = true;
+	public static boolean remboniteGenerationEnabled = false;
 	
 
 	public static void init(File file) {
@@ -52,7 +52,7 @@ public class ConfigurationHandler {
 		try {
 			config.load();
 			
-			boolean bluOre = config.get("Worldgen Disabler", "Generate Copper", true).getBoolean(true);
+			//boolean bluOre = config.get("Worldgen Disabler", "Generate Copper", true).getBoolean(true);
 			
 			BlockIds.BLUORE_ID = config.getBlock(Strings.BLUORE_NAME,
 					BlockIds.BLUORE_ID_DEFAULT).getInt(
