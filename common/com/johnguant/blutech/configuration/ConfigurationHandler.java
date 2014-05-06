@@ -41,9 +41,9 @@ public class ConfigurationHandler {
 	public static boolean fossilOreGenerationEnabled = true;
 	public static boolean aluminiumGenerationEnabled = true;
 	public static boolean nickelGenerationEnabled = true;
-	public static boolean tungstenGenerationEnabled = false;
+	public static boolean tungstenGenerationEnabled = true;
 	public static boolean abyssStoneGenerationEnabled = true;
-	public static boolean remboniteGenerationEnabled = false;
+	public static boolean remboniteGenerationEnabled = true;
 	
 
 	public static void init(File file) {
@@ -153,10 +153,10 @@ public class ConfigurationHandler {
 			ItemIds.ERIDIAN_ID = config.getItem(Strings.ERIDIAN_NAME,
 					ItemIds.ERIDIAN_ID_DEFAULT).getInt(
 					ItemIds.ERIDIAN_ID_DEFAULT);
-					
-			ItemIds.HEADRON_ID = config.getItem(Strings.HEADRON_NAME,
-					ItemIds.HEADRON_ID_DEFAULT).getInt(
-					ItemIds.HEADRON_ID_DEFAULT);
+			
+			ItemIds.ENERGIZEDINGOT_ID = config.getItem(Strings.ENERGIZEDINGOT_NAME,
+					ItemIds.ENERGIZEDINGOT_ID_DEFAULT).getInt(
+					ItemIds.ENERGIZEDINGOT_ID_DEFAULT);
 			
 			ItemIds.STEELINGOT_ID = config.getItem(Strings.STEELINGOT_NAME,
 					ItemIds.STEELINGOT_ID_DEFAULT).getInt(
@@ -178,6 +178,18 @@ public class ConfigurationHandler {
 					ItemIds.COCUSTABLET_ID_DEFAULT).getInt(
 					ItemIds.COCUSTABLET_ID_DEFAULT);
 			
+			ItemIds.HEADRON_ID = config.getItem(Strings.HEADRON_NAME,
+					ItemIds.HEADRON_ID_DEFAULT).getInt(
+					ItemIds.HEADRON_ID_DEFAULT);
+			
+			ItemIds.DPU_ID = config.getItem(Strings.DPU_NAME, 
+					ItemIds.DPU_ID_DEFAULT).getInt(
+					ItemIds.DPU_ID_DEFAULT);
+			
+			ItemIds.STONEBRICK_ID = config.getItem(Strings.STONEBRICK_NAME,
+					ItemIds.STONEBRICK_ID_DEFAULT).getInt(
+					ItemIds.STONEBRICK_ID_DEFAULT);
+			
 			ItemIds.IRONBRICK_ID = config.getItem(Strings.IRONBRICK_NAME,
 					ItemIds.IRONBRICK_ID_DEFAULT).getInt(
 					ItemIds.IRONBRICK_ID_DEFAULT);
@@ -194,10 +206,7 @@ public class ConfigurationHandler {
 					ItemIds.REMBONITEBRICK_ID_DEFAULT).getInt(
 					ItemIds.REMBONITEBRICK_ID_DEFAULT);
 			
-			ItemIds.STONEBRICK_ID = config.getItem(Strings.STONEBRICK_NAME,
-					ItemIds.STONEBRICK_ID_DEFAULT).getInt(
-					ItemIds.STONEBRICK_ID_DEFAULT);
-			
+						
 			ItemIds.IRONNUGGET_ID = config.getItem(Strings.IRONNUGGET_NAME,
 					ItemIds.IRONNUGGET_ID_DEFAULT).getInt(
 					ItemIds.IRONNUGGET_ID_DEFAULT);
@@ -222,9 +231,7 @@ public class ConfigurationHandler {
 					ItemIds.ENERGIZEDBLEND_ID_DEFAULT).getInt(
 					ItemIds.ENERGIZEDBLEND_ID_DEFAULT);
 			
-			ItemIds.ENERGIZEDINGOT_ID = config.getItem(Strings.ENERGIZEDINGOT_NAME,
-					ItemIds.ENERGIZEDINGOT_ID_DEFAULT).getInt(
-					ItemIds.ENERGIZEDINGOT_ID_DEFAULT);
+			
 								
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID
