@@ -70,5 +70,8 @@ public class Strings {
 	public static final String TILEENTITY_STATE = "TileEntityState";
     public static final String TILEENTITY_CUSTOMNAME = "TileEntityCustomName";
     public static final String TILEENTITY_DIRECTION = "TileEntityDirection";
+    public static final String CATEGORY_GENERATION = "Generation";
+    
+    public static final boolean BLUORE_GEN_DEFAULT = true;
 
 }

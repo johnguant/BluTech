@@ -41,9 +41,6 @@ public class BluBlocks {
 	public static Block nickelOre;
 	public static Block tungstenOre;
 	public static Block abyssStone;
-	public static Block bluWood;
-	public static Block bluPlanks;
-	public static Block bluLeaves;
 	
 	public static Block bluMachineBlock;
 	public static Block energisedMachineBlock;

@@ -21,7 +21,6 @@ import java.io.File;
 import java.util.logging.Level;
 
 import net.minecraftforge.common.Configuration;
-
 import com.johnguant.blutech.lib.BlockIds;
 import com.johnguant.blutech.lib.ItemIds;
 import com.johnguant.blutech.lib.Reference;
@@ -31,14 +30,30 @@ import cpw.mods.fml.common.FMLLog;
 
 public class ConfigurationHandler {
 
+
 	public static Configuration config;
+	public static boolean tinGenerationEnabled = true;
+	public static boolean copperGenerationEnabled = true;
+	public static boolean silverGenerationEnabled = true;
+	public static boolean leadGenerationEnabled = true;
+	public static boolean bluOreGenerationEnabled = true;
+	public static boolean rhodiumGenerationEnabled = true;
+	public static boolean fossilOreGenerationEnabled = true;
+	public static boolean aluminiumGenerationEnabled = true;
+	public static boolean nickelGenerationEnabled = true;
+	public static boolean tungstenGenerationEnabled = true;
+	public static boolean abyssStoneGenerationEnabled = true;
+	public static boolean remboniteGenerationEnabled = true;
+	
 
 	public static void init(File file) {
 		config = new Configuration(file);
 
 		try {
 			config.load();
-
+			
+			boolean bluOre = config.get("Worldgen Disabler", "Generate Copper", true).getBoolean(true);
+			
 			BlockIds.BLUORE_ID = config.getBlock(Strings.BLUORE_NAME,
 					BlockIds.BLUORE_ID_DEFAULT).getInt(
 					BlockIds.BLUORE_ID_DEFAULT);
@@ -210,7 +225,7 @@ public class ConfigurationHandler {
 			ItemIds.ENERGIZEDINGOT_ID = config.getItem(Strings.ENERGIZEDINGOT_NAME,
 					ItemIds.ENERGIZEDINGOT_ID_DEFAULT).getInt(
 					ItemIds.ENERGIZEDINGOT_ID_DEFAULT);
-					
+								
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID
 					+ "Has a problem loading the config file");
