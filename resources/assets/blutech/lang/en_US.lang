@@ -16,9 +16,8 @@ tile.eridianMachineBlock.name=Eridian Machine Block
 tile.alloyFurnaceIdle.name=Alloy Furnace
 tile.alloyFurnaceActive.name=Alloy Furnace
 tile.abyssStone.name=Abyss Stone
-tile.bluWood.name=Blu Wood
-tile.bluPlanks.name=Blu Planks
-tile.bluLeaves.name=Blu Leaves
+tile.colouredStone.name=Stone
+tile.cadmiumOre.name=Cadmium Ore
 itemGroup.blutech=BluTech
 
 #Item localizations

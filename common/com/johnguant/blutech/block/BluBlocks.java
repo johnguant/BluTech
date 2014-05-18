@@ -41,6 +41,7 @@ public class BluBlocks {
 	public static Block nickelOre;
 	public static Block tungstenOre;
 	public static Block abyssStone;
+	public static Block cadmiumOre;
 	
 	public static Block bluMachineBlock;
 	public static Block energisedMachineBlock;
@@ -48,6 +49,8 @@ public class BluBlocks {
 	
 	public static Block alloyFurnaceIdle;
 	public static Block alloyFurnaceActive;
+	
+	public static Block colouredStone;
 
 	public static void init() {
 		bluOre = new BlockOre(BlockIds.BLUORE_ID)
@@ -129,6 +132,14 @@ public class BluBlocks {
 		MinecraftForge.setBlockHarvestLevel(tungstenOre, "pickaxe", 2);
 		OreDictionary.registerOre("oreTungsten", new ItemStack(tungstenOre));
 		
+		cadmiumOre = new BlockOre(BlockIds.CADMIUMORE_ID)
+				.setHardness(4.0f)
+				.setStepSound(Block.soundStoneFootstep)
+				.setUnlocalizedName("cadmiumOre");
+		GameRegistry.registerBlock(cadmiumOre, "cadmiumOre");
+		MinecraftForge.setBlockHarvestLevel(cadmiumOre, "pickaxe", 2);
+		OreDictionary.registerOre("oreCadmium", new ItemStack(cadmiumOre));
+		
 		nickelOre = new BlockOre(BlockIds.NICKELORE_ID)
 				.setHardness(2.0f)
 				.setStepSound(Block.soundStoneFootstep)
@@ -143,24 +154,21 @@ public class BluBlocks {
 				.setUnlocalizedName("bluMachineBlock");
 		GameRegistry.registerBlock(bluMachineBlock, "bluMachineBlock");
 		MinecraftForge.setBlockHarvestLevel(bluMachineBlock, "pickaxe", 1);
-		MinecraftForge.setBlockHarvestLevel(bluMachineBlock, "pickaxe", 1);
-		
+				
 		energisedMachineBlock = new Blocks(BlockIds.MACHINEBLOCK2_ID)
 				.setHardness(2.5f)
 				.setStepSound(Block.soundStoneFootstep)
 				.setUnlocalizedName("energisedMachineBlock");
 		GameRegistry.registerBlock(energisedMachineBlock, "energisedMachineBlock");
 		MinecraftForge.setBlockHarvestLevel(energisedMachineBlock, "pickaxe", 1);
-		MinecraftForge.setBlockHarvestLevel(energisedMachineBlock, "pickaxe", 1);
-		
+				
 		eridianMachineBlock = new Blocks(BlockIds.MACHINEBLOCK3_ID)
 				.setHardness(3.0f)
 				.setStepSound(Block.soundStoneFootstep)
 				.setUnlocalizedName("eridianMachineBlock");
 		GameRegistry.registerBlock(eridianMachineBlock, "eridianMachineBlock");
 		MinecraftForge.setBlockHarvestLevel(eridianMachineBlock, "pickaxe", 1);
-		MinecraftForge.setBlockHarvestLevel(eridianMachineBlock, "pickaxe", 1);
-		
+				
 		alloyFurnaceIdle = new BlockFurnace(BlockIds.FURNACEIDLE_ID)
 				.setHardness(1.5f)
 				.setStepSound(Block.soundAnvilFootstep)
@@ -183,6 +191,14 @@ public class BluBlocks {
 				.setUnlocalizedName("abyssStone");
 		GameRegistry.registerBlock(abyssStone, "abyssStone");
 		MinecraftForge.setBlockHarvestLevel(abyssStone, "pickaxe", 3);
+		
+		colouredStone = new BlockColoured(BlockIds.COLOUREDSTONE_ID)
+				.setHardness(1.0f)
+				.setStepSound(Block.soundStoneFootstep)
+				.setUnlocalizedName("colouredStone");
+		GameRegistry.registerBlock(colouredStone, "colouredStone");
+		MinecraftForge.setBlockHarvestLevel(colouredStone, "pickaxe", 0);
+		OreDictionary.registerOre("stone", new ItemStack(colouredStone));
 		
 	}
 

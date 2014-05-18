@@ -21,6 +21,7 @@ import java.io.File;
 import java.util.logging.Level;
 
 import net.minecraftforge.common.Configuration;
+
 import com.johnguant.blutech.lib.BlockIds;
 import com.johnguant.blutech.lib.ItemIds;
 import com.johnguant.blutech.lib.Reference;
@@ -121,6 +122,14 @@ public class ConfigurationHandler {
 			BlockIds.ABYSSSTONE_ID = config.getBlock(Strings.ABYSSSTONE_NAME,
 					BlockIds.ABYSSSTONE_ID_DEFAULT).getInt(
 					BlockIds.ABYSSSTONE_ID_DEFAULT);
+			
+			BlockIds.COLOUREDSTONE_ID = config.getBlock(Strings.COLOUREDSTONE_NAME,
+					BlockIds.COLOUREDSTONE_ID_DEFAULT).getInt(
+					BlockIds.COLOUREDSTONE_ID_DEFAULT);
+			
+			BlockIds.CADMIUMORE_ID = config.getBlock(Strings.CADMIUMORE_NAME,
+					BlockIds.CADMIUMORE_ID_DEFAULT).getInt(
+					BlockIds.CADMIUMORE_ID_DEFAULT);
 			
 			ItemIds.BLUDUST_ID = config.getItem(Strings.BLUDUST_NAME,
 					ItemIds.BLUDUST_ID_DEFAULT).getInt(
@@ -230,7 +239,6 @@ public class ConfigurationHandler {
 			ItemIds.ENERGIZEDBLEND_ID = config.getItem(Strings.ENERGIZEDBLEND_NAME,
 					ItemIds.ENERGIZEDBLEND_ID_DEFAULT).getInt(
 					ItemIds.ENERGIZEDBLEND_ID_DEFAULT);
-			
 			
 								
 		} catch (Exception e) {

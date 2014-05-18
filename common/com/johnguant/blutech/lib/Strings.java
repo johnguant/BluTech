@@ -69,6 +69,8 @@ public class Strings {
 	public static final String FURNACEIDLE_NAME = "AlloyFurnaceIdle";
 	public static final String FURNACEACTIVE_NAME = "AlloyFurnaceActive";
 	public static final String ABYSSSTONE_NAME = "AbyssStone";
+	public static final String COLOUREDSTONE_NAME = "ColouredStone";
+	public static final String CADMIUMORE_NAME = "CadmiumOre";
 	
 	public static final String TILEENTITY_STATE = "TileEntityState";
     public static final String TILEENTITY_CUSTOMNAME = "TileEntityCustomName";

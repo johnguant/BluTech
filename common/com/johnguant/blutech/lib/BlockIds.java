@@ -70,4 +70,9 @@ public class BlockIds {
 	public final static int ABYSSSTONE_ID_DEFAULT = 516;
 	public static int ABYSSSTONE_ID;
 	
+	public final static int COLOUREDSTONE_ID_DEFAULT = 517;
+	public static int COLOUREDSTONE_ID;
+	
+	public final static int CADMIUMORE_ID_DEFAULT = 518;
+	public static int CADMIUMORE_ID;
 }
