@@ -169,21 +169,20 @@ public class BluBlocks {
 		GameRegistry.registerBlock(eridianMachineBlock, "eridianMachineBlock");
 		MinecraftForge.setBlockHarvestLevel(eridianMachineBlock, "pickaxe", 1);
 				
-		alloyFurnaceIdle = new BlockFurnace(BlockIds.FURNACEIDLE_ID)
-				.setHardness(1.5f)
+		alloyFurnaceIdle = new BlockFurnace(BlockIds.FURNACEIDLE_ID, false)
+				.setHardness(2.5f)
 				.setStepSound(Block.soundAnvilFootstep)
 				.setUnlocalizedName("alloyFurnaceIdle");
 		GameRegistry.registerBlock(alloyFurnaceIdle, "alloyFurnaceIdle");
 		MinecraftForge.setBlockHarvestLevel(alloyFurnaceIdle, "pickaxe", 1);
 		
-		alloyFurnaceActive = new BlockFurnace(BlockIds.FURNACEACTIVE_ID)
-				.setHardness(1.5f)
+		alloyFurnaceActive = new BlockFurnace(BlockIds.FURNACEACTIVE_ID, true)
+				.setHardness(2.5f)
 				.setStepSound(Block.soundAnvilFootstep)
-				.setLightValue(2.0f)
+				.setLightValue(1.0f)
 				.setUnlocalizedName("alloyFurnaceActive");
 		GameRegistry.registerBlock(alloyFurnaceActive, "alloyFurnaceActive");
 		MinecraftForge.setBlockHarvestLevel(alloyFurnaceActive, "pickaxe", 1);
-		//TODO Add a light value equal to that of GlowStone.
 		
 		abyssStone = new Blocks(BlockIds.ABYSSSTONE_ID)
 				.setHardness(51.0f)
