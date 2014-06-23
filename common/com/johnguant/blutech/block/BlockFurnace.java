@@ -17,7 +17,8 @@ import com.johnguant.blutech.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class BlockFurnace extends BlockContainer {
+public class BlockFurnace extends Block//Container 
+{
 	
 	private final boolean isActive; 
 
@@ -39,13 +40,13 @@ public class BlockFurnace extends BlockContainer {
 			this.iconFront = iconRegister.registerIcon(Reference.MOD_ID + ":" + (this.isActive ? "furnaceActive_FRONT" : "furnaceIdle_FRONT"));
 			this.iconBack = iconRegister.registerIcon(Reference.MOD_ID + ":" + "furnace_BACK");
 			this.iconBottom = iconRegister.registerIcon(Reference.MOD_ID + ":" + "furnace_BOTTOM");
-			this.iconTop = iconRegister.registerIcon(Reference.MOD_ID + ":" + "furnace_TOP");
+			this.iconTop = iconRegister.registerIcon(Reference.MOD_ID + ":" + (this.isActive ? "furnaceActive_TOP" : "furnaceIdle_TOP"));
 	}
 	
 	@SideOnly(Side.CLIENT)
 	public Icon getIcon(int side, int metadata){
 		// 0 = Bottom,  1 = Top, 2,3,4 and 5 = Sides
-		return side == metadata ? this.iconFront : this.blockIcon;
+		return side == metadata ? this.iconFront : (side == 0 ? this.iconBottom : (side == 1 ? this.iconTop : this.blockIcon));
 	}
 	
 	public int idDropped(int par1, Random random, int par3){
@@ -86,9 +87,9 @@ public class BlockFurnace extends BlockContainer {
 		
 		
 	}
-	public TileEntity createNewTileEntity(World world){
-		return new TileEntityAlloyFurnace();
-	}
+	//public TileEntity createNewTileEntity(World world){
+	//	return new TileEntityAlloyFurnace();
+	//}
 	
 	}
 
