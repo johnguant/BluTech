@@ -17,7 +17,7 @@ import com.johnguant.blutech.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class BlockFurnace extends Block//Container 
+public class BlockFurnace extends BlockContainer 
 {
 	
 	private final boolean isActive; 
@@ -50,7 +50,7 @@ public class BlockFurnace extends Block//Container
 	}
 	
 	public int idDropped(int par1, Random random, int par3){
-		return BlockIds.FURNACEIDLE_ID;
+		return BluBlocks.alloyFurnaceIdle.blockID;
 	}
 	
 	public void onBlockAdded(World world, int x, int y, int z){
@@ -87,9 +87,9 @@ public class BlockFurnace extends Block//Container
 		
 		
 	}
-	//public TileEntity createNewTileEntity(World world){
-	//	return new TileEntityAlloyFurnace();
-	//}
+	public TileEntity createNewTileEntity(World world){
+		return new TileEntityAlloyFurnace();
+	}
 	
 	}
 
