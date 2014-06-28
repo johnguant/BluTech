@@ -1,0 +1,22 @@
+[
+{
+  "modid": "blutech",
+  "name": "BluTech",
+  "description": "Cool tech mod (better description coming soon)",
+  "version": "${mod_version}",
+  "mcversion": "${minecraft_version}",
+  "url": "https://github.com/johnguant/BluTech",
+  "updateUrl": "",
+  "authorList": [
+    "john_guant",
+    "Blu_B0lt"
+    "Jack Wu (Textures)"]
+  "credits": "The world!",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
