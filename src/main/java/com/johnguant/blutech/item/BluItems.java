@@ -21,7 +21,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
-import com.johnguant.blutech.lib.ItemIds;
 import com.johnguant.blutech.lib.Strings;
 
 import cpw.mods.fml.common.registry.GameRegistry;

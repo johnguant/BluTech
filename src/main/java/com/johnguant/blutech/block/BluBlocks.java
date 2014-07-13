@@ -22,7 +22,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.oredict.OreDictionary;
 
-import com.johnguant.blutech.lib.BlockIds;
 import com.johnguant.blutech.lib.Strings;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -168,25 +167,9 @@ public class BluBlocks {
 				.setBlockName("eridianMachineBlock");
         eridianMachineBlock.setHarvestLevel("pickaxe", 1);
 		GameRegistry.registerBlock(eridianMachineBlock, "eridianMachineBlock");
-				
-		alloyFurnaceIdle = new BlockFurnace(false)
-				.setHardness(2.5f)
-				.setStepSound(Block.soundTypeAnvil)
-				.setBlockName("alloyFurnaceIdle");
-        alloyFurnaceIdle.setHarvestLevel("pickaxe", 1);
-		GameRegistry.registerBlock(alloyFurnaceIdle, "alloyFurnaceIdle");
-		
-		alloyFurnaceActive = new BlockFurnace(true)
-				.setHardness(2.5f)
-				.setStepSound(Block.soundTypeAnvil)
-				.setLightLevel(1.0f)
-				.setBlockName("alloyFurnaceActive");
-        alloyFurnaceActive.setHarvestLevel("pickaxe", 1);
-		GameRegistry.registerBlock(alloyFurnaceActive, "alloyFurnaceActive");
 		
 		abyssStone = new Blocks()
 				.setHardness(51.0f)
-				.setStepSound(Block.soundPowderFootstep)
 				.setBlockName("abyssStone");
         abyssStone.setHarvestLevel("pickaxe", 3);
 		GameRegistry.registerBlock(abyssStone, "abyssStone");

@@ -20,10 +20,9 @@ package com.johnguant.blutech.configuration;
 import java.io.File;
 import java.util.logging.Level;
 
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.config.Configuration;
 
-import com.johnguant.blutech.lib.BlockIds;
-import com.johnguant.blutech.lib.ItemIds;
 import com.johnguant.blutech.lib.Reference;
 import com.johnguant.blutech.lib.Strings;
 
@@ -48,20 +47,31 @@ public class ConfigurationHandler {
 	
 
 	public static void init(File file) {
-		config = new Configuration(file);
-
-		try {
-			config.load();
-			
-			//boolean bluOre = config.get("Worldgen Disabler", "Generate Copper", true).getBoolean(true);
-			
-								
-		} catch (Exception e) {
-			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID
-					+ "Has a problem loading the config file");
-		} finally {
-			config.save();
-		}
+		if (config == null) {
+            config = new Configuration(file);
+            loadConfiguration();
+        }
 	}
+
+    @SubscribeEvent
+
+    public static void loadConfiguration() {
+        tinGenerationEnabled = config.getBoolean("tinGeneration", "oreGeneration", true, "Tin Ore Generation");
+        copperGenerationEnabled = config.getBoolean("copperGeneration", "oreGeneration", true, "Copper Ore Generation");
+        silverGenerationEnabled = config.getBoolean("silverGeneration", "oreGeneration", true, "Silver Ore Generation");
+        leadGenerationEnabled = config.getBoolean("leadGeneration", "oreGeneration", true, "Lead Ore Generation");
+        bluOreGenerationEnabled = config.getBoolean("bluOreGeneration", "oreGeneration", true, "BluOre Ore Generation");
+        rhodiumGenerationEnabled = config.getBoolean("rhodiumGeneration", "oreGeneration", true, "Rhodium Ore Generation");
+        fossilOreGenerationEnabled = config.getBoolean("fossilOreGeneration", "oreGeneration", true, "Fossil Ore Generation");
+        aluminiumGenerationEnabled = config.getBoolean("aluminiumGeneration", "oreGeneration", true, "Aluminium Ore Generation");
+        nickelGenerationEnabled = config.getBoolean("nickelGeneration", "oreGeneration", true, "Nickel Ore Generation");
+        tungstenGenerationEnabled = config.getBoolean("tungstenGeneration", "oreGeneration", true, "Tungsten Ore Generation");
+        abyssStoneGenerationEnabled = config.getBoolean("abyssStoneGeneration", "oreGeneration", true, "Abyss Stone Generation");
+        remboniteGenerationEnabled = config.getBoolean("remboniteGeneration", "oreGeneration", true, "Rembonite Ore Generation");
+
+        if (config.hasChanged()) {
+            config.save();
+        }
+    }
 
 }

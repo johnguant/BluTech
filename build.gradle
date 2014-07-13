@@ -31,7 +31,7 @@ archivesBaseName = "BluTech"
 
 minecraft {
     version = config.minecraft_version + "-" + config.forge_version
-    assetDir = "eclipse/assets"
+    runDir = "eclipse/assets"
     
     replaceIn "lib/Reference.java"
     replace "@VERSION@", "${config.mod_version}.${System.getenv("BUILD_NUMBER") ?: 0}"

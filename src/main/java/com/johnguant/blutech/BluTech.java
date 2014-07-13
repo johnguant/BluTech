@@ -55,11 +55,7 @@ public class BluTech {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		ConfigurationHandler.init(new File(event.getModConfigurationDirectory()
-				.getAbsolutePath()
-				+ File.separator
-				+ Reference.MOD_ID
-				+ File.separator + Reference.MOD_ID + ".cfg"));
+        ConfigurationHandler.init((event.getSuggestedConfigurationFile()));
 		BluItems.init();
 		BluBlocks.init();
 	}
