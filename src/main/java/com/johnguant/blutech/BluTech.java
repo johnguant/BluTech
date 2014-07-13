@@ -42,7 +42,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
-//public class BluTech {
+public class BluTech {
 
 	@Instance(Reference.MOD_ID)
 	public static BluTech instance;
