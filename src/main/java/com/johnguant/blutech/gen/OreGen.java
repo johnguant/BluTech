@@ -65,36 +65,11 @@ public class OreGen implements IWorldGenerator {
 				7 + random.nextInt(3), 5, 15, 50);
 		}
 		
-		if (ConfigurationHandler.aluminiumGenerationEnabled = true){
-		this.addOreSpawn(BluBlocks.aluminiumOre, world, random, x, z, 16, 16,
-				7 + random.nextInt(3), 5, 15, 60);
-		}
-		
 		if (ConfigurationHandler.silverGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.silverOre, world, random, x, z, 16, 16,
 				5 + random.nextInt(3), 5, 15, 50);
 		}
-		
-		if (ConfigurationHandler.rhodiumGenerationEnabled = true){
-		this.addOreSpawn(BluBlocks.rhodiumOre, world, random, x, z, 16, 16,
-				4 + random.nextInt(3), 5, 5, 16);
-		}
-		
-		if (ConfigurationHandler.remboniteGenerationEnabled = true){
-		this.addOreSpawn(BluBlocks.remboniteOre, world, random, x, z, 16, 16,
-				6 + random.nextInt(3), 5, 5, 16);
-		}
-		
-		if (ConfigurationHandler.nickelGenerationEnabled = true){
-		this.addOreSpawn(BluBlocks.nickelOre, world, random, x, z, 16, 16, 
-				7 + random.nextInt(3), 5, 15, 60);
-		}
-		
-		if (ConfigurationHandler.tungstenGenerationEnabled = true){
-		this.addOreSpawn(BluBlocks.tungstenOre, world, random, x, z, 16, 16,
-				2 + random.nextInt(3), 5, 5, 25);
-		}
-		
+
 		if (ConfigurationHandler.fossilOreGenerationEnabled = true){
 		this.addOreSpawn(BluBlocks.fossilOre, world, random, x, z, 16, 16, 
 				8 + random.nextInt(3), 5, 30, 60);

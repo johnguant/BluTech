@@ -50,7 +50,7 @@ public class BlockOre extends Block {
 	 * Returns the ID of the items to drop on destruction.
 	 */
 	public Item getItemDropped(int par1, Random par2Random, int par3) {
-		return this == BluBlocks.bluOre ? BluItems.bluDust : (this == BluBlocks.remboniteOre ? BluItems.rembonite : (this == BluBlocks.fossilOre ? Items.bone : Item.getItemFromBlock(this) ));
+		return this == BluBlocks.bluOre ? BluItems.bluDust : (this == BluBlocks.fossilOre ? Items.bone : Item.getItemFromBlock(this) );
 	}
 	
 		/**

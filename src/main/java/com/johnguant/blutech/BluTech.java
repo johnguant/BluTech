@@ -67,13 +67,10 @@ public class BluTech {
 		
 		//Example 1:				ItemStack dirtStack 		= new ItemStack(Block.dirt);
         //Example 2:				ItemStack diamondsStack 	= new ItemStack(Item.diamond, 64);
-        ItemStack aluminiumStack 	= new ItemStack(BluItems.aluminiumIngot, 1);
         ItemStack copperStack 		= new ItemStack(BluItems.copperIngot, 1);
         ItemStack tinStack 			= new ItemStack(BluItems.tinIngot, 1);
         ItemStack leadStack 		= new ItemStack(BluItems.leadIngot, 1);
         ItemStack silverStack		= new ItemStack(BluItems.silverIngot, 1);
-        ItemStack nickelStack		= new ItemStack(BluItems.nickelIngot,1);
-        ItemStack tungstenStack		= new ItemStack(BluItems.tungstenIngot, 1);
         ItemStack cocusStack		= new ItemStack(BluItems.cocusTablet, 1);
         ItemStack beefStack			= new ItemStack(Items.beef, 1);
         ItemStack porkStack			= new ItemStack(Items.porkchop, 1);
@@ -88,19 +85,13 @@ public class BluTech {
         ItemStack coalStack			= new ItemStack(Items.coal, 1);
         ItemStack eridianStack 		= new ItemStack(BluItems.eridian, 1);
         ItemStack blualloyStack		= new ItemStack(BluItems.bluAlloyIngot, 1);
-        ItemStack remboniteStack	= new ItemStack(BluItems.rembonite, 1);
         ItemStack diamondStack		= new ItemStack(Items.diamond, 1);
         ItemStack ironStack			= new ItemStack(Items.iron_ingot, 1);
         ItemStack stoneStack		= new ItemStack(Blocks.stone, 1);
         ItemStack stoneBrickStack	= new ItemStack(BluItems.stoneBrick, 1);
         ItemStack nuggetIStack		= new ItemStack(BluItems.ironNugget, 9);
         ItemStack nuggetDStack		= new ItemStack(BluItems.diamondNugget, 9);
-        ItemStack nuggetRStack		= new ItemStack(BluItems.remboniteNugget, 9);
-        ItemStack bluAlloyStack		= new ItemStack(BluItems.bluAlloyIngot, 1);
-        ItemStack energizedStack	= new ItemStack(BluItems.energizedIngot, 1);
-        ItemStack headronStack		= new ItemStack(BluItems.headron, 1);
-        
-        		
+
         		
 		
         //Example Shaped:		GameRegistry.addRecipe(diamondStack, new Object[] { "DDD", "DDD", "DDD", 'D', Block.dirt }); Makes a diamond from a grid full of dirt
@@ -113,18 +104,12 @@ public class BluTech {
         
         GameRegistry.addRecipe(diamondStack, new Object[] { "DDD", "DDD", "DDD", 'D', BluItems.diamondNugget});
         GameRegistry.addRecipe(ironStack, new Object[] { "DDD", "DDD", "DDD", 'D', BluItems.ironNugget});
-        GameRegistry.addRecipe(remboniteStack, new Object[] { "DDD", "DDD", "DDD", 'D', BluItems.remboniteNugget});
         GameRegistry.addRecipe(stoneBrickStack, new Object[] { "D", 'D', Blocks.stonebrick});
                 
         //Complex Recipies:
                 
         GameRegistry.addRecipe(cocusStack, new Object[] { "D D", " F ", "D D",
         		'D', Items.iron_ingot, 'F', Blocks.furnace});
-        
-        GameRegistry.addRecipe(headronStack, new Object[] { "GRG", "RBR", "GRG",
-        		'G', BluItems.bluDust, 'R', Items.redstone, 'B', Items.water_bucket});
-        
-        
         
         //Shapeless Recipes:
         GameRegistry.addShapelessRecipe(bakedStack, potatoStack, cocusStack);				//Potato Cooking WIP
@@ -134,20 +119,13 @@ public class BluTech {
         GameRegistry.addShapelessRecipe(cookedFStack, fishStack, cocusStack);				//Fish Cooking WIP
         GameRegistry.addShapelessRecipe(cocusStack, coalStack, cocusStack);					//Cocus Tablet Refueling. WIP.
         GameRegistry.addShapelessRecipe(nuggetIStack, ironStack);							//Iron Nuggets
-        GameRegistry.addShapelessRecipe(nuggetRStack, remboniteStack);						//Rembonite Nuggets
         GameRegistry.addShapelessRecipe(nuggetDStack, diamondStack);						//Diamond Nuggets
         
         //Smelting Recipes:
-		GameRegistry.addSmelting(BluBlocks.aluminiumOre, aluminiumStack, 0.7f);		//Aluminium Smelting
 		GameRegistry.addSmelting(BluBlocks.copperOre, copperStack, 0.5f);			//Copper Smelting
 		GameRegistry.addSmelting(BluBlocks.tinOre, tinStack, 0.5f);					//Tin Smelting
 		GameRegistry.addSmelting(BluBlocks.leadOre, leadStack, 0.7f);				//Lead Smelting
 		GameRegistry.addSmelting(BluBlocks.silverOre, silverStack, 1.0f);			//Silver Smelting
-		GameRegistry.addSmelting(BluBlocks.nickelOre, nickelStack, 0.5f);			//Nickel Smelting
-		GameRegistry.addSmelting(BluBlocks.tungstenOre, tungstenStack, 1.0f);		//Tungsten Smelting
-		GameRegistry.addSmelting(BluItems.eridianBlend, eridianStack, 1.0f);			//Eridian Creation
-		GameRegistry.addSmelting(BluItems.bluAlloyBlend, blualloyStack, 0.3f);		//Blu Alloy Ingot Creation
-		GameRegistry.addSmelting(BluItems.energizedBlend, energizedStack, 0.3f);		//Energized Ingot Creation
 		
 		
 		
