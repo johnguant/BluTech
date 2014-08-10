@@ -33,7 +33,6 @@ public class CreativeTabBluTech extends CreativeTabs {
     {
         return BluItems.bluDust;
     }
-	
-	
+
 
 }

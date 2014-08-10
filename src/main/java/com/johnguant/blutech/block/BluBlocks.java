@@ -28,18 +28,19 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class BluBlocks {
 
-	public static Block bluOre;//To Keep
-	public static Block copperOre;//To Keep
-	public static Block tinOre;//To Keep
-	public static Block leadOre;//To Keep
-	public static Block silverOre;//To Keep
-	public static Block fossilOre;//To Keep
-	public static Block abyssStone;//To Keep
+	public static Block bluOre;
+	public static Block copperOre;
+	public static Block tinOre;
+	public static Block leadOre;
+	public static Block silverOre;
+	public static Block fossilOre;
+	public static Block abyssStone;
 	
-	public static Block bluMachineChassis;//To Keep Rename: BluMachineChassis
+	public static Block bluMachineChassis;
 
 	public static Block alloyFurnaceIdle;//Needs to be re-introduced
 	public static Block alloyFurnaceActive;//Needs to be re-introduced
+    public static Block researchStation;
 	
 	public static void init() {
 		bluOre = new BlockOre()
@@ -102,6 +103,29 @@ public class BluBlocks {
 				.setBlockName("abyssStone");
         abyssStone.setHarvestLevel("pickaxe", 3);
 		GameRegistry.registerBlock(abyssStone, "abyssStone");
+
+        alloyFurnaceActive = new BlockAlloyFurnace(true)
+                .setHardness(2.5f)
+                .setStepSound(Block.soundTypeStone)
+                .setBlockName("alloyFurnaceActive");
+        alloyFurnaceActive.setHarvestLevel("pickaxe", 1);
+        GameRegistry.registerBlock(alloyFurnaceActive, "alloyFurnaceActive");
+
+
+        alloyFurnaceIdle = new BlockAlloyFurnace(false)
+                .setHardness(2.5f)
+                .setStepSound(Block.soundTypeStone)
+                .setBlockName("alloyFurnaceIdle");
+        alloyFurnaceIdle.setHarvestLevel("pickaxe", 1);
+        GameRegistry.registerBlock(alloyFurnaceIdle, "alloyFurnaceIdle");
+
+        researchStation = new BlockStation()
+                .setHardness(2.5f)
+                .setStepSound(Block.soundTypeAnvil)
+                .setBlockName("researchStation");
+        researchStation.setHarvestLevel("pickaxe", 2);
+        GameRegistry.registerBlock(researchStation, "researchStation");
+
 	}
 
 }
