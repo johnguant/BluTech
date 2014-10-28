@@ -2,9 +2,7 @@ BluTech
 =======
 [![Build Status](https://travis-ci.org/johnguant/BluTech.svg?branch=master)](https://travis-ci.org/johnguant/BluTech)
 
-This is a mod for minecraft that is early in development. It is going to use the universal electricty api for all the power
-
-The mod itself will add a whole lot of useful items and blocks to do awesome things
+This is a mod for minecraft that is early in development. Currently, I am unsure where to take this mod further. I am thinking another massive ore mod, along the likes of Metallurgy, but with different ways of spawning the ores that most mods will find common.
 
 Currently Adds:  
 - Copper Ore and Ingot  
